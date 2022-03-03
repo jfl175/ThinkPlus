@@ -13,7 +13,10 @@
     <!-- navigation header -->
       <nav class="navbar navbar-expand-sm navbar-light bg-light">
           <div class="container-lg">
-              <a class="navbar-brand" href="#"><span class="fw-bold text-secondary">Think Plus Education</span></a>
+              <a class="navbar-brand" href="#">
+                  <img src="assets/Think_Plus_Logo_SVG.svg" alt="thinkplus logo" width="100" class="img-fluid">
+                  <!-- <span class="fw-bold text-secondary">Think Plus Education</span> -->
+                </a>
 
               <!-- navigation toggle for small screens -->
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
@@ -35,17 +38,20 @@
                       </li>
                       <li class="nav-item">
                           <a class="nav-link" aria-current="page" href="#">About</a>
-                      </li>
-                      <li class="nav-item d-none d-md-inline">
+                      </li>  
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Help</a>
+                    </li>
+                      <li class="nav-item d-none d-sm-inline">
                           <a class="ms-3 m-1 shadow-sm btn btn-outline-primary align-self-center btn-sm" href="#" role="button">Login</a>  
                       </li>
-                      <li class="nav-item d-none d-md-inline">
+                      <li class="nav-item d-none d-sm-inline">
                           <a class="m-1 shadow-sm btn btn-outline-success align-self-center btn-sm" href="#" role="button"> Register </a>                    
                       </li>
-                      <li class="nav-item d-md-none">
+                      <li class="nav-item d-sm-none">
                           <a class="nav-link" href="#">Login</a>  
                       </li>
-                      <li class="nav-item d-md-none">
+                      <li class="nav-item d-sm-none">
                           <a class="nav-link" href="#" > Register </a>                    
                       </li>
                   </ul>
@@ -67,19 +73,39 @@
 
       <!-- footer -->
 
-      <section id="footer">
-              <nav class="navbar navbar-expand-sm fixed-bottom navbar-light">
-                  <div class="container-fluid">
-                      <a class="navbar-brand" href="#">primary</a>
-                      
-                      <div class="collapse navbar-collapse" id="main-footer">
-                          <div class="navbar-nav">
-                              <a class="nav-link active" aria-current="page" href="#">Home</a>
-                              
-                          </div>
-                      </div>
-                  </div>
-              </nav>
+      <section id="footer" class="bg-light">
+        <div class="container-lg py-3">
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="assets/Think_Plus_Logo_SVG.svg" alt="thinkplus logo" width="100" class="img-fluid">
+                    <div class="ms-3">
+                        <p class="text-muted h4">Think Plus Education</p>
+                        <p class="lead small">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-left-dots" viewBox="0 0 16 16">
+                                <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                                <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                              </svg> 
+                             Contact Us</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 text-center">
+                    <p class="lead">Links</p>
+                    <ul class="navbar-nav">
+                        <a class="nav-link text-reset" aria-current="page" href="#">Assessment</a>
+                        <a class="nav-link text-reset" aria-current="page" href="#">Courses</a>
+                        <a class="nav-link text-reset" aria-current="page" href="#">Pricing</a>
+                        <a class="nav-link text-reset" aria-current="page" href="#">About</a>
+                        <a class="nav-link text-reset" aria-current="page" href="#">Help</a>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <p class="fst-italic small text-center">
+                Copyright © 2022 Think Plus Education Technologies Pvt. Ltd.
+            </p>
+        </div>
       </section>
 
   
