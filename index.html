@@ -8,14 +8,31 @@
   <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
   <style>
-      .bg-white {
-          background-color: white;
+      .bg-white { background-color: white; }
+      .text-justifyy { text-align: justify; }
+      .custom-thumbnail, .custom-thumbnail-2 { 
+        height: 100px!important;
+        width:100px!important;
+        border-radius: 50px;
+        margin: 0 auto;
+        margin-bottom: -40px;
       }
-
-      .text-justifyy {
-          text-align: justify;
+      .custom-thumbnail-2 {
+          margin: 0 auto;
+          margin-top: -50px;
       }
+      .bg-grey { background-color: #e4e2e7;}
+      .bg-grey2 { background-color: #d9d9d9;}
+      .testimonial-bg { 
+          background-color: #d9d9d9;
+          border-radius: 30px;
+          padding-top: 60px;
+        }
 
+        @media only screen and (min-width: 721px) {
+            .testimonial-bg { height: 420px!important; }
+        }
+      
   </style>
 </head>
 <body>
@@ -28,12 +45,10 @@
         intro > book session functionality
         intro > test form functionality
         intro > tooltips
-
+        faqs page
     -->
 
-    <div id="header">
-
-    </div>
+    <div id="header"></div>
     
     <!-- navigation header -->
       <nav class="navbar sticky-top bg-white navbar-expand-sm navbar-light shadow-sm">
@@ -97,7 +112,7 @@
 
         <!-- Modal -->
         <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginLabel" aria-hidden="true">
-            <div class="modal-dialog">
+            <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content ">
                 <div class="modal-header">
                 <h5 class="container modal-title text-center h5" id="loginLabel">Login</h5>
@@ -114,7 +129,7 @@
                 </div>
                 <div class="modal-footer">
                         <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
-                        <button type="submit" class="btn btn-outline-success">Login</button>
+                        <button type="submit" class="btn btn-success">Login</button>
                     </form>
                     <!-- <button type="button" class="btn btn-success">Submit</button> -->
                 </div>
@@ -123,19 +138,19 @@
         </div>
 
       <!-- intro section -->
-      <section id="intro">
-          <div class="container py-3">
-              <div class="row">
+      <section id="intro" class="shadow-sm">
+          <div class="container py-5">
+              <div class="row py-5">
                   <div class="col-md-6 offset-md-1">
                       <img src="assets/intro.png" class="img-fluid" alt="intro image">
                   </div>
                   <div class="col-md-3 offset-md-1 align-self-center">
                     
-                    <button type="button" class="container btn shadow-sm btn-outline-danger my-3" data-bs-toggle="modal" data-bs-target="#bookSession">
+                    <button type="button" class="container btn shadow-sm btn-danger my-3" data-bs-toggle="modal" data-bs-target="#bookSession">
                         Book FREE Mentoring Session
                     </button>
 
-                    <button type="button" class="container btn btn-lg shadow-sm btn-outline-danger my-3" data-bs-toggle="modal" data-bs-target="#test">
+                    <button type="button" class="container btn btn-lg shadow-sm btn-danger my-3" data-bs-toggle="modal" data-bs-target="#test">
                         Test Your Ability
                     </button>
 
@@ -146,7 +161,7 @@
           <!-- Modals -->
           <!-- book session modal -->
             <div class="modal fade" id="bookSession" tabindex="-1" aria-labelledby="bookSessionLabel" aria-hidden="true">
-                <div class="modal-dialog">
+                <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content ">
                     <div class="modal-header">
                     <h5 class="container modal-title text-center h5" id="bookSessionLabel">Your FREE Mentoring Session</h5>
@@ -171,7 +186,7 @@
                     <div class="modal-footer">
                         
                             <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
-                            <button type="submit" class="btn btn-outline-success">Submit</button>
+                            <button type="submit" class="btn btn-success">Submit</button>
                         </form>
                         <!-- <button type="button" class="btn btn-success">Submit</button> -->
                     </div>
@@ -181,7 +196,7 @@
 
             <!-- test modal -->
             <div class="modal fade" id="test" tabindex="-1" aria-labelledby="testLabel" aria-hidden="true">
-                <div class="modal-dialog">
+                <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="container modal-title text-center h5" id="bookSessionLabel">FREE Assessment Test</h5>
@@ -204,7 +219,7 @@
                     <div class="modal-footer">
                         
                             <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
-                            <button type="submit" class="btn btn-outline-success">Start Test</button>
+                            <button type="submit" class="btn btn-success">Start Test</button>
                         </form>
                         <!-- <button type="button" class="btn btn-success">Submit</button> -->
                     </div>
@@ -213,16 +228,14 @@
             </div>
 
       </section>
-
-      <div class="break"></div>
       
       <!-- courses | requires separate pages as well -->
-      <section id="courses">
-          <div class="container">
+      <section id="courses" class="bg-light">
+          <div class="container py-5">
               <div class="row">
                 <h2 class="text-center">OUR COURSES</h2>
-                <div class="col-md-4 offset-md-2 py-4">
-                    <div class="card border border-danger text-dark bg-light" >
+                <div class="col-md-4 offset-md-2 pt-5">
+                    <div class="card border border-danger shadow text-dark bg-light" >
                         <img src="assets/ipmat.png" class="card-img-top p-2 bg-white" alt="ipmat course">
                         <div class="card-body">
                           <h4 class="card-title text-center">IPMAT 2022</h4>
@@ -233,13 +246,13 @@
                             </p><p class="card-text">
                             VARC: 100+ Hours of Live Interactive Sessions | 250+ videos | 30+ Assignments
                           </p>
-                          <a href="#" class="d-block btn btn-primary mb-3">Enroll Now</a>
-                          <a href="ipmat.html" class="d-block btn btn-outline-danger">Learn More</a>
+                          <a href="#" class="shadow-sm d-block btn btn-primary mb-3">Enroll Now</a>
+                          <a href="ipmat.html" class="shadow-sm d-block btn btn-outline-danger">Learn More</a>
                         </div>
                       </div>
                 </div>
-                <div class="col-md-4 mx-4 py-4">
-                    <div class="card border border-danger  text-dark bg-light" >
+                <div class="col-md-4 mx-4 mb-5 pt-5">
+                    <div class="card border border-danger shadow text-dark bg-light" >
                         <img src="assets/cat.png" class="card-img-top p-2 bg-white" alt="ipmat course">
                         <div class="card-body">
                           <h4 class="card-title text-center">CAT 2022</h4>
@@ -252,14 +265,87 @@
                             <p class="card-text">
                                 VARC: 100+ Hours of Live Interactive Sessions | 250+ videos | 30+ Assignments
                           </p>
-                          <a href="#" class="d-block btn btn-primary mb-3">Enroll Now</a>
-                          <a href="cat.html" class="d-block btn btn-outline-danger">Learn More</a>
+                          <a href="#" class="shadow-sm d-block btn btn-primary mb-3">Enroll Now</a>
+                          <a href="cat.html" class="shadow-sm d-block btn btn-outline-danger">Learn More</a>
                         </div>
                       </div>
                 </div>
-                
               </div>
           </div>
+    </section>
+
+    
+    <!-- testimonials -->
+    <section id="testimonials">
+        <div class="container py-5">
+            <div class="row">
+                <h2 class="text-center mb-5">WHAT OUR ASPIRANTS SAY</h2>
+                <div class="col-md-3">
+                    <img src="assets/ram.png" class="img-fluid shadow-sm border d-block custom-thumbnail" alt="aspirant photo 1">
+                    <div class="container p-3 pt-5 testimonial-bg">
+                        <p class="text-warning text-center">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </p>
+                        <p class="">
+                            " The guidance provided by Sir is one of a kind. He understands the strengths and weaknesses of every student under him and plans out strategies accordingly. The entire preparation process became an engaging and enjoyable experience. I believe the techniques of solving problems that I have learned would not only be helpful for the exam but also for my future career."    
+                        </p>
+                        <p class="text-end"> - Likitha, IIM Ranchi</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <img src="assets/ram.png" class="img-fluid shadow-sm border d-block custom-thumbnail" alt="aspirant photo 1">
+                    <div class="container p-3 pt-5 testimonial-bg">
+                        <p class="text-warning text-center">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </p>
+                        <p class="">
+                            " PRK sir has been instrumental in upskilling my Quant, which helped me crack the first batch of IIM Sambalpur. His invaluable suggestions for interview were unmatched with any of the CAT faculty I have known till now."    
+                        </p>
+                        <p class="text-end"> - Satish, IIM Sambalpur</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <img src="assets/ram.png" class="img-fluid shadow-sm border d-block custom-thumbnail" alt="aspirant photo 1">
+                    <div class="container p-3 pt-5 testimonial-bg">
+                        <p class="text-warning text-center">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </p>
+                        <p class="">
+                            " Even after taking coaching I failed to get a good CAT score. Being from Bsc background, Quants was a big headache. Then Sir guided me step by step: clearing basics, teaching time-saver methods and doing extensive practice. It was due to his motivation and guidance I was elated to receive CAP calls, IIM K (LSM) call & a final admission in a prestigious Baby IIM."    
+                        </p>
+                        <p class="text-end"> - Sandhya , IIM Udaipur</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <img src="assets/ram.png" class="img-fluid shadow-sm border d-block custom-thumbnail" alt="aspirant photo 1">
+                    <div class="container p-3 pt-5 testimonial-bg">
+                        <p class="text-warning text-center">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </p>
+                        <p class="">
+                            " Ram sir has this unique way of mentoring his coachees! He understands the strengths and areas of improvement of each his students and helps them accordingly. I have seen him help students with not so great quant skills score amazing percentiles. Personally, he helped me cultivate discipline and practice which helped me crack CAT and get into IIM Indore! "    
+                        </p>
+                        <p class="text-end"> - Anudeep, IIM Indore</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
       <!-- about us -->
@@ -280,7 +366,7 @@
                           <button type="button" data-bs-target="#aboutUsSlider" data-bs-slide-to="3" aria-label="Slide 4"></button>
                         </div>
                         <div class="carousel-inner ">
-                          <div style="height:360px" class="carousel-item  active" data-bs-interval="10000">
+                          <div style="height:360px;" class="carousel-item  active" data-bs-interval="10000">
                               <div class="d-flex justify-content-center">
                                 <img src="assets/about1.png" class="rounded d-block w-100" alt="session image 1">
                               </div>
@@ -289,17 +375,17 @@
                               <p>Some representative placeholder content for the first slide.</p>
                             </div> -->
                           </div>
-                          <div style="height:360px" class="carousel-item" data-bs-interval="2000">
+                          <div style="height:360px;" class="carousel-item" data-bs-interval="2000">
                             <div class="d-flex justify-content-center">
                             <img src="assets/about2.jpg" class="rounded d-block w-100" alt="session image 2">
                         </div>
                           </div>
-                          <div style="height:360px" class="carousel-item">
+                          <div style="height:360px;" class="carousel-item">
                             <div class="d-flex justify-content-center">
                             <img src="assets/about3.jpg" class="rounded d-block w-100" alt="session image 3">
                         </div>
                           </div>
-                          <div style="height:360px" class="carousel-item">
+                          <div style="height:360px;" class="carousel-item">
                             <div class="d-flex justify-content-center">
                             <img src="assets/about4.jpg" class="rounded d-block w-100" alt="session image 4">
                         </div>
@@ -343,18 +429,139 @@
       </section>
 
       <!-- our team -->
-      <section id="team">
+      <section id="team" class="bg-light">
+          <div class="container py-5">
+              <div class="row">
+                <h2 class="text-center mb-5">FOUNDERS</h2>
+                <div class="mt-5"></div>
+                <div class="col-md-2 offset-md-4">
+                    <div class="card text-dark bg-light" >
+                        <img src="assets/rama.png" class="card-img-top shadow p-2 bg-primary custom-thumbnail-2" alt="ipmat course">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Rama Krishna P</h5>
+                            <p class="card-text text-center">IIM Udaipur</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card text-dark bg-light" >
+                        <img src="assets/rama.png" class="card-img-top shadow p-2 bg-primary custom-thumbnail-2" alt="ipmat course">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Rama Krishna P</h5>
+                            <p class="card-text text-center">IIM Udaipur</p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              
+              <div class="mt-5"></div>
 
-      </section>
-
-      <!-- testimonials -->
-      <section id="testimonials">
-
+              <div class="row py-5">
+                <h2 class="text-center mb-5">SUPPORT TEAM</h2>
+                <div class="mt-5"></div>
+                <div class="col-md-2 offset-md-2">
+                    <div class="card text-dark bg-light" >
+                        <img src="assets/siti.png" class="card-img-top shadow p-2 bg-danger custom-thumbnail-2" alt="ipmat course">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Sitikantha</h5>
+                            <p class="card-text text-center">IIM Udaipur</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card text-dark bg-light" >
+                        <img src="assets/ram.png" class="card-img-top shadow p-2 bg-success custom-thumbnail-2" alt="ipmat course">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Ram Pavan</h5>
+                            <p class="card-text text-center">IIM Udaipur</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card text-dark bg-light" >
+                        <img src="assets/sriram.png" class="card-img-top shadow p-2 bg-warning custom-thumbnail-2" alt="ipmat course">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Sriram</h5>
+                            <p class="card-text text-center">IIM Udaipur</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card text-dark bg-light" >
+                        <img src="assets/sarat.png" class="card-img-top shadow p-2 bg-primary custom-thumbnail-2" alt="ipmat course">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Sarat</h5>
+                            <p class="card-text text-center">IIM Udaipur</p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+          </div>
       </section>
 
       <!-- faqs -->
       <section id="faqs">
+          <div class="container py-5">
+              <div class="row">
+                <h2 class="text-center mb-5">FAQs</h2>
+                <div class="col-md-6 offset-md-3">
+                    <div class="accordion" id="faqsAcc">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                What is IPMAT?
+                            </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqsAcc">
+                            <div class="accordion-body">
+                                The Integrated Programme in Management Aptitude Test (IPMAT) is a test that assesses management aptitude. Various institutes hold their own IPMATs in order to admit students to their 5-year Integrated Management Programme.                        </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Is maths in the IPMAT of the JEE level?
+                            </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqsAcc">
+                            <div class="accordion-body">
+                                There may be few questions of that level as there are few topics in IPMAT QA which are common with JEE. But, not all questions are of that level. So, students who have not prepared for JEE, don’t have to worry much regarding this.                            </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Which IIMs accept IPM ?
+                            </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqsAcc">
+                            <div class="accordion-body">
+                                The Integrated Programme in Management Aptitude Test (IPMAT) is a test that assesses management aptitude. Various institutes hold their own IPMATs in order to admit students to their 5-year Integrated Management Programme. The IPM course is now offered by five IIMs: IIM Indore, IIM Rohtak, IIM Ranchi, IIM Bodhgaya, and IIM Jammu. According to reports, IIM Amritsar plans to begin their curriculum in 2023. Apart from IIMs, the IPM programme is also offered by IIFT Kokinanda, NALSAR, and Nirma University.                            </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                What is the difficulty level of IPMAT?
+                            </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqsAcc">
+                            <div class="accordion-body">
+                                This year, more than 40,000 students are expected to register for IPMAT, with only 600 places available, resulting in a selection ratio of around 1:66. It isn't simple, but with the right approach and assistance, anyone can pass the IPMAT.                            </div>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="d-flex justify-content-center pt-3">
+                        <a href="faqs.html" class="btn shadow-sm btn-outline-danger my-3" >
+                        SEE ALL QUESTIONS
+                        </a>
+                    </div>
+                </div>
+
+                
+              </div>
+          </div>
       </section>
 
       <!-- footer -->
