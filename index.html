@@ -7,14 +7,31 @@
   <title>Think Plus Education</title>
   <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-  
+  <style>
+      .bg-white {
+          background-color: white;
+      }
+  </style>
 </head>
 <body>
 
+    <!-- pending:
+        nav > courses > cat page
+        nav > courses > ipmat page
+        nav > login functionality
+        nav > register
+        intro > book session functionality
+        intro > test form functionality
+        intro > tooltips
+
+    
+    -->
+
+
     <!-- navigation header -->
-      <nav class="navbar sticky-top navbar-expand-sm navbar-light shadow-sm">
+      <nav class="navbar sticky-top bg-white navbar-expand-sm navbar-light shadow-sm">
           <div class="container-lg">
-              <a class="navbar-brand" href="#">
+              <a class="navbar-brand" href="index.html">
                   <img src="assets/Think_Plus_Logo_PNG.png" alt="thinkplus logo" width="80" class="img-fluid">
                   <!-- <span class="fw-bold text-secondary">Think Plus Education</span> -->
                 </a>
@@ -50,11 +67,13 @@
                       
                     <li class="ms-4 nav-item">
                         <a class="nav-link py-1" aria-current="page">
-                            <button type="button" class="shadow-sm btn btn-outline-primary">
+                            <button type="button" class="shadow-sm btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
                                 Login <i class="bi bi-box-arrow-in-right"></i>
                             </button>
                         </a>
-                    </li>
+                    </li>       
+                        
+                    
                       <!-- <li class="nav-item d-none d-sm-inline">
                           <a class="m-1 shadow-sm btn btn-outline-success align-self-center btn-sm" href="#" role="button"> Register </a>                    
                       </li> -->
@@ -69,14 +88,131 @@
           </div>
       </nav>
 
+      <!-- Modal -->
+      <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content ">
+            <div class="modal-header">
+            <h5 class="container modal-title text-center h5" id="loginLabel">Login</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="" id="formBook" method="get">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="loginID" name="loginID" required placeholder="Username">
+                    </div>
+                    <div class="mb-3">
+                      <input type="password" class="form-control" id="loginPassword" name="loginPassword" required placeholder="Password">
+                    </div>
+            </div>
+            <div class="modal-footer">
+                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-outline-success">Login</button>
+                </form>
+                <!-- <button type="button" class="btn btn-success">Submit</button> -->
+            </div>
+        </div>
+        </div>
+    </div>
+
       <!-- intro section -->
       <section id="intro">
-          here<hr>here
+          <div class="container py-5">
+              <div class="row">
+                  <div class="col-md-6 offset-md-1">
+                      <img src="assets/intro.png" class="img-fluid" alt="intro image">
+                  </div>
+                  <div class="col-md-3 offset-md-1 align-self-center">
+                    
+                    <button type="button" class="container btn shadow-sm btn-outline-danger mt-3" data-bs-toggle="modal" data-bs-target="#bookSession">
+                        Book FREE Mentoring Session
+                    </button>
+
+                    <button type="button" class="container btn btn-lg shadow-sm btn-outline-danger my-3" data-bs-toggle="modal" data-bs-target="#test">
+                        Test Your Ability
+                    </button>
+
+                  </div>
+              </div>
+          </div>
+
+          <!-- Modals -->
+          <!-- book session modal -->
+            <div class="modal fade" id="bookSession" tabindex="-1" aria-labelledby="bookSessionLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content ">
+                    <div class="modal-header">
+                    <h5 class="container modal-title text-center h5" id="bookSessionLabel">Your FREE Mentoring Session</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Kindly provide your details</p>
+                        <form action="" id="formBook" method="get">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="bookName" name="bookName" required placeholder="Name">
+                            </div>
+                            <div class="mb-3">
+                                <input type="tel" class="form-control" id="bookMobile" name="bookMobile" required placeholder="Phone number (10 digits)">
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" id="bookEmail" name="bookEmail" required placeholder="Email address">
+                            </div>
+                            <div class="mb-3">
+                                <input type="date" class="form-control" id="bookDate" name="bookDate" min="2022-04-26" value="2022-04-27" required placeholder="Prefferred date">
+                            </div>
+                    </div>
+                    <div class="modal-footer">
+                        
+                            <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-outline-success">Submit</button>
+                        </form>
+                        <!-- <button type="button" class="btn btn-success">Submit</button> -->
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- test modal -->
+            <div class="modal fade" id="test" tabindex="-1" aria-labelledby="testLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="container modal-title text-center h5" id="bookSessionLabel">FREE Assessment Test</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    
+                    <div class="modal-body">
+                        <p>Kindly provide your details</p>
+                        <form action="" id="formTest" method="get">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="testName" name="testName" required placeholder="Name">
+                            </div>
+                            <div class="mb-3">
+                                <input type="tel" class="form-control" id="testMobile" name="testMobile" required placeholder="Phone number (10 digits)">
+                            </div>
+                            <div class="mb-3">
+                            <input type="email" class="form-control" id="testEmail" name="testEmail" required placeholder="Email address">
+                            </div>
+                    </div>
+                    <div class="modal-footer">
+                        
+                            <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-outline-success">Start Test</button>
+                        </form>
+                        <!-- <button type="button" class="btn btn-success">Submit</button> -->
+                    </div>
+                </div>
+                </div>
+            </div>
 
       </section>
 
       <!-- about us -->
-      <section id="about-us">
+      <section id="about-us" class="bg-light">
+          <div class="container">
+              <hr>
+              <hr>
+          </div>
 
       </section>
 
