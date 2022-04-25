@@ -5,16 +5,37 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Think Plus Education</title>
-  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <style>
+      .bg-white {
+          background-color: white;
+      }
+  </style>
 </head>
 <body>
 
+    <!-- pending:
+        nav > courses > cat page
+        nav > courses > ipmat page
+        nav > login functionality
+        nav > register
+        intro > book session functionality
+        intro > test form functionality
+        intro > tooltips
+
+    
+    -->
+
+    <div id="header">
+
+    </div>
+    
     <!-- navigation header -->
-      <nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <nav class="navbar sticky-top bg-white navbar-expand-sm navbar-light shadow-sm">
           <div class="container-lg">
-              <a class="navbar-brand" href="#">
-                  <img src="assets/Think_Plus_Logo_SVG.svg" alt="thinkplus logo" width="100" class="img-fluid">
+              <a class="navbar-brand" href="#header">
+                  <img src="assets/Think_Plus_Logo_PNG.png" alt="thinkplus logo" width="80" class="img-fluid">
                   <!-- <span class="fw-bold text-secondary">Think Plus Education</span> -->
                 </a>
 
@@ -27,47 +48,266 @@
               <!-- navigation links -->
               <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
                   <ul class="navbar-nav">
-                      <li class="nav-item">
-                          <a class="nav-link" aria-current="page" href="#">Assessment</a>
+                      <li class="mx-2 nav-item  dropdown">
+                        <a class="nav-link dropdown-toggle shadow-sm btn btn-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Courses
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="ipmat.html">IPMAT</a></li>
+                          <li><a class="dropdown-item" href="cat.html">CAT</a></li>
+                        </ul>
                       </li>
-                      <li class="nav-item">
-                          <a class="nav-link" aria-current="page" href="#">Courses</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" aria-current="page" href="#">Pricing</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" aria-current="page" href="#">About</a>
+                      <li class="mx-2 nav-item ">
+                          <a class="nav-link shadow-sm btn btn-light" aria-current="page" href="#about-us">
+                          About Us
+                          </a>
                       </li>  
-                      <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Help</a>
+                      <li class="mx-2 nav-item ">
+                        <a class="nav-link shadow-sm btn btn-light" aria-current="page" href="#footer">
+                        Contact
+                        </a>
                     </li>
-                      <li class="nav-item d-none d-sm-inline">
-                          <a class="ms-3 m-1 shadow-sm btn btn-outline-primary align-self-center btn-sm" href="#" role="button">Login</a>  
-                      </li>
-                      <li class="nav-item d-none d-sm-inline">
+                      
+                    <li class="ms-4 nav-item">
+                        <a class="nav-link py-1" aria-current="page">
+                            <button type="button" class="shadow-sm btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
+                                Login <i class="bi bi-box-arrow-in-right"></i>
+                            </button>
+                        </a>
+                    </li>       
+                        
+                    
+                      <!-- <li class="nav-item d-none d-sm-inline">
                           <a class="m-1 shadow-sm btn btn-outline-success align-self-center btn-sm" href="#" role="button"> Register </a>                    
-                      </li>
-                      <li class="nav-item d-sm-none">
+                      </li> -->
+                      <!-- <li class="nav-item d-sm-none">
                           <a class="nav-link" href="#">Login</a>  
                       </li>
                       <li class="nav-item d-sm-none">
                           <a class="nav-link" href="#" > Register </a>                    
-                      </li>
+                      </li> -->
                   </ul>
               </div>
           </div>
       </nav>
 
+        <!-- Modal -->
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content ">
+                <div class="modal-header">
+                <h5 class="container modal-title text-center h5" id="loginLabel">Login</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="" id="formBook" method="get">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="loginID" name="loginID" required placeholder="Username">
+                        </div>
+                        <div class="mb-3">
+                        <input type="password" class="form-control" id="loginPassword" name="loginPassword" required placeholder="Password">
+                        </div>
+                </div>
+                <div class="modal-footer">
+                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-outline-success">Login</button>
+                    </form>
+                    <!-- <button type="button" class="btn btn-success">Submit</button> -->
+                </div>
+            </div>
+            </div>
+        </div>
+
       <!-- intro section -->
       <section id="intro">
-          <hr>
+          <div class="container py-3">
+              <div class="row">
+                  <div class="col-md-6 offset-md-1">
+                      <img src="assets/intro.png" class="img-fluid" alt="intro image">
+                  </div>
+                  <div class="col-md-3 offset-md-1 align-self-center">
+                    
+                    <button type="button" class="container btn shadow-sm btn-outline-danger my-3" data-bs-toggle="modal" data-bs-target="#bookSession">
+                        Book FREE Mentoring Session
+                    </button>
+
+                    <button type="button" class="container btn btn-lg shadow-sm btn-outline-danger my-3" data-bs-toggle="modal" data-bs-target="#test">
+                        Test Your Ability
+                    </button>
+
+                  </div>
+              </div>
+          </div>
+
+          <!-- Modals -->
+          <!-- book session modal -->
+            <div class="modal fade" id="bookSession" tabindex="-1" aria-labelledby="bookSessionLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content ">
+                    <div class="modal-header">
+                    <h5 class="container modal-title text-center h5" id="bookSessionLabel">Your FREE Mentoring Session</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Kindly provide your details</p>
+                        <form action="" id="formBook" method="get">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="bookName" name="bookName" required placeholder="Name">
+                            </div>
+                            <div class="mb-3">
+                                <input type="tel" class="form-control" id="bookMobile" name="bookMobile" required placeholder="Phone number (10 digits)">
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" id="bookEmail" name="bookEmail" required placeholder="Email address">
+                            </div>
+                            <div class="mb-3">
+                                <input type="date" class="form-control" id="bookDate" name="bookDate" min="2022-04-26" value="2022-04-27" required placeholder="Prefferred date">
+                            </div>
+                    </div>
+                    <div class="modal-footer">
+                        
+                            <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-outline-success">Submit</button>
+                        </form>
+                        <!-- <button type="button" class="btn btn-success">Submit</button> -->
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- test modal -->
+            <div class="modal fade" id="test" tabindex="-1" aria-labelledby="testLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="container modal-title text-center h5" id="bookSessionLabel">FREE Assessment Test</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    
+                    <div class="modal-body">
+                        <p>Kindly provide your details</p>
+                        <form action="" id="formTest" method="get">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="testName" name="testName" required placeholder="Name">
+                            </div>
+                            <div class="mb-3">
+                                <input type="tel" class="form-control" id="testMobile" name="testMobile" required placeholder="Phone number (10 digits)">
+                            </div>
+                            <div class="mb-3">
+                            <input type="email" class="form-control" id="testEmail" name="testEmail" required placeholder="Email address">
+                            </div>
+                    </div>
+                    <div class="modal-footer">
+                        
+                            <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-outline-success">Start Test</button>
+                        </form>
+                        <!-- <button type="button" class="btn btn-success">Submit</button> -->
+                    </div>
+                </div>
+                </div>
+            </div>
 
       </section>
 
-      <!-- courses section -->
+      <!-- about us -->
+      <section id="about-us" class="bg-light">
+          <div class="container py-5">
+              <div class="row mt-5">
+                <div class="col-md-4 offset-md-1 py-3">
+                    <h2 class="text-center">About Us</h2>
+                    <p class="">Think Plus Education was initiated by a group of IIM graduates and incubated at IIM Udaipur to help students crack competitive exams like IPMAT and CAT. It provides end-to-end support in training students with the proper assessment for identifying the challenges and solving them through customized content and personalized mentoring.</p>
+                    <p>
+                      Many students preparing for BBA and MBA entrance exams lack awareness, guidance, and direction in cracking the exam and choosing the right college. We allocate a dedicated mentor to every student to support throughout the preparation journey. </p>
+                </div>
+                <div class="col-md-7">
+                    <div id="aboutUsSlider" class="carousel carousel-dark slide" data-bs-ride="carousel" style="width:100%;overflow:hidden;">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#aboutUsSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#aboutUsSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#aboutUsSlider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="#aboutUsSlider" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        </div>
+                        <div class="carousel-inner ">
+                          <div style="height:360px" class="carousel-item  active" data-bs-interval="10000">
+                              <div class="d-flex justify-content-center">
+                                <img src="assets/about1.png" class="rounded d-block w-100" alt="session image 1">
+                              </div>
+                            <!-- <div class="carousel-caption d-none d-md-block">
+                              <h5>First slide label</h5>
+                              <p>Some representative placeholder content for the first slide.</p>
+                            </div> -->
+                          </div>
+                          <div style="height:360px" class="carousel-item" data-bs-interval="2000">
+                            <div class="d-flex justify-content-center">
+                            <img src="assets/about2.jpg" class="rounded d-block w-100" alt="session image 2">
+                        </div>
+                          </div>
+                          <div style="height:360px" class="carousel-item">
+                            <div class="d-flex justify-content-center">
+                            <img src="assets/about3.jpg" class="rounded d-block w-100" alt="session image 3">
+                        </div>
+                          </div>
+                          <div style="height:360px" class="carousel-item">
+                            <div class="d-flex justify-content-center">
+                            <img src="assets/about4.jpg" class="rounded d-block w-100" alt="session image 4">
+                        </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#aboutUsSlider" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#aboutUsSlider" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+              </div>
+          </div>
+
+      </section>
+
+      <!-- personal mentoring session -->
+      <section id="mentoring">
+          <div class="container py-5">
+              <div class="row">
+                <h2 class="text-center text-uppercase">One on One Personal Mentoring</h2>
+                  <div class="col-md-6 offset-md-1">
+                      <p>A personal mentor is assigned to the student who will guide the student at every step of the preparation journey.</p>
+                      <p>Mentor will cater to all of the student's academic problems and help them to get through it. Mentor will be a constant companion of the student in this preparation journey</p>
+
+                      <div class="d-flex justify-content-center">
+                      <button type="button" class="btn shadow-sm btn-outline-danger my-3" data-bs-toggle="modal" data-bs-target="#bookSession">
+                          Book FREE Mentoring Session
+                        </button>
+                        </div>
+                  </div>
+                  <div class="col-md-5">
+                      <img src="assets/oneonone.png" class="img-fluid" alt="personal mentoring sessions">
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- courses | requires separate pages as well -->
       <section id="courses">
-          <hr>
+
+      </section>
+
+      <!-- our team -->
+      <section id="team">
+
+      </section>
+
+      <!-- testimonials -->
+      <section id="testimonials">
+
+      </section>
+
+      <!-- faqs -->
+      <section id="faqs">
 
       </section>
 
@@ -109,9 +349,6 @@
       </section>
 
   
-
-
-
   <script src="bootstrap/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   
 </body>
