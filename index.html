@@ -10,7 +10,7 @@
   <style>
       .bg-white { background-color: white; }
       .text-justifyy { text-align: justify; }
-      .custom-thumbnail, .custom-thumbnail-2 { 
+      .custom-thumbnail { 
         height: 100px!important;
         width:100px!important;
         border-radius: 50px;
@@ -19,7 +19,10 @@
       }
       .custom-thumbnail-2 {
           margin: 0 auto;
-          margin-top: -50px;
+          margin-top: -65px;
+          height: 130px!important;
+          width: 130px!important;
+          border-radius: 65px;
       }
       .bg-grey { background-color: #e4e2e7;}
       .bg-grey2 { background-color: #d9d9d9;}
@@ -27,6 +30,17 @@
           background-color: #d9d9d9;
           border-radius: 30px;
           padding-top: 60px;
+        }
+        
+        .bg-red-gradient {
+            background-image: linear-gradient(to right, #dd5071, #fc6667);
+            border-radius: 25px;
+        }
+
+        .fixed-button {
+            right: 2vh;
+            bottom: 2vh;
+            z-index: 100;
         }
 
         @media only screen and (min-width: 721px) {
@@ -46,6 +60,8 @@
         intro > test form functionality
         intro > tooltips
         faqs page
+        footer > put social links
+        footer > put quick links
     -->
 
     <div id="header"></div>
@@ -110,7 +126,7 @@
           </div>
       </nav>
 
-        <!-- Modal -->
+        <!-- Login Modal -->
         <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content ">
@@ -137,10 +153,46 @@
             </div>
         </div>
 
+        <div class="position-fixed fixed-button">
+            <button type="button" class="container shadow btn btn-danger" data-bs-toggle="modal" data-bs-target="#contactUs">
+                Ask Us Anything!
+            </button>
+        </div>
+
+        <!-- Contact Us Modal -->
+        <div class="modal fade" id="contactUs" tabindex="-1" aria-labelledby="contactUsLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content container">
+                <div class="modal-header">
+                <h5 class="container modal-title text-center h5" id="contactUsLabel">Ask Us Anything!</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="" id="formBook" method="get">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="contactUsID" name="contactUsID" required placeholder="Your Name">
+                        </div>
+                        <div class="mb-3">
+                            <input type="tel" class="form-control" id="contactUsMobile" name="contactUsMobile" required placeholder="Your Contact No.">
+                        </div>
+                        <div class="mb-3">
+                            <textarea type="textarea" class="form-control" id="contactUsQuery" name="contactUsQuery" required placeholder="Your Query"></textarea>
+                        </div>
+                </div>
+                <div class="modal-footer">
+                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-success">Send</button>
+                    </form>
+                    <!-- <button type="button" class="btn btn-success">Submit</button> -->
+                </div>
+            </div>
+            </div>
+        </div>
+
       <!-- intro section -->
       <section id="intro" class="shadow-sm">
           <div class="container py-5">
-              <div class="row py-5">
+              <div class="row">
                   <div class="col-md-6 offset-md-1">
                       <img src="assets/intro.png" class="img-fluid" alt="intro image">
                   </div>
@@ -228,9 +280,64 @@
             </div>
 
       </section>
+
+      
+        <!-- Why choose us section -->
+        <section id="choose-us">
+            <div class="container py-5">
+                <div class="row">
+                    <h1 class="text-center">WHY CHOOSE <img src="assets/Think_Plus_Logo_PNG.png" class="img-fluid" style="height: 60px!important;margin-top:-20px;" alt=""></h1>
+                    <h3 class="text-center">Advantage of both offline & online classes</h2>
+                    <div class="col-md-10 offset-md-1 row d-flex align-self-center bg-red-gradient">
+                        <div class="p-3 col-sm-6 col-md-3 text-center">
+                            <img src="assets/choose1.png" class="img-fluid d-blcok" style="height: 80px!important;" alt="why coose us image 1">
+                            <h5 class="d-block text-white">One on One Mentor</h5>
+                            <p>Each student have a personal mentor for individual attention and guidance.</p>
+                        </div>
+                        <div class="p-3 col-sm-6 col-md-3 text-center">
+                            <img src="assets/choose2.png" class="img-fluid d-blcok" style="height: 80px!important;" alt="why coose us image 1">
+                            <h5 class="d-block text-white">One on One Mentor</h5>
+                            <p>Each student have a personal mentor for individual attention and guidance.</p>
+                        </div>
+                        <div class="p-3 col-sm-6 col-md-3 text-center">
+                            <img src="assets/choose3.png" class="img-fluid d-blcok" style="height: 80px!important;" alt="why coose us image 1">
+                            <h5 class="d-block text-white">One on One Mentor</h5>
+                            <p>Each student have a personal mentor for individual attention and guidance.</p>
+                        </div>
+                        <div class="p-3 col-sm-6 col-md-3 text-center">
+                            <img src="assets/choose4.png" class="img-fluid d-blcok" style="height: 80px!important;" alt="why coose us image 1">
+                            <h5 class="d-block text-white">One on One Mentor</h5>
+                            <p>Each student have a personal mentor for individual attention and guidance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+      <!-- personal mentoring session -->
+      <section id="mentoring" class="bg-light">
+        <div class="container py-5">
+            <div class="row">
+              <h2 class="text-center text-uppercase">One on One Personal Mentoring</h2>
+                <div class="col-md-6 offset-md-1 align-self-center">
+                    <p class="text-justifyy">A personal mentor is assigned to the student who will guide the student at every step of the preparation journey.</p>
+                    <p class="text-justifyy">Mentor will cater to all of the student's academic problems and help them to get through it. Mentor will be a constant companion of the student in this preparation journey</p>
+
+                    <div class="d-flex justify-content-center">
+                    <button type="button" class="btn shadow-sm btn-outline-danger my-3" data-bs-toggle="modal" data-bs-target="#bookSession">
+                        Book FREE Mentoring Session
+                      </button>
+                      </div>
+                </div>
+                <div class="col-md-5">
+                    <img src="assets/oneonone.png" class="img-fluid" alt="personal mentoring sessions">
+                </div>
+            </div>
+        </div>
+    </section>
       
       <!-- courses | requires separate pages as well -->
-      <section id="courses" class="bg-light">
+      <section id="courses" class="">
           <div class="container py-5">
               <div class="row">
                 <h2 class="text-center">OUR COURSES</h2>
@@ -274,9 +381,11 @@
           </div>
     </section>
 
+
+
     
     <!-- testimonials -->
-    <section id="testimonials">
+    <section id="testimonials" class="bg-light">
         <div class="container py-5">
             <div class="row">
                 <h2 class="text-center mb-5">WHAT OUR ASPIRANTS SAY</h2>
@@ -349,7 +458,7 @@
     </section>
 
       <!-- about us -->
-      <section id="about-us" class="bg-light">
+      <section id="about-us" class="">
           <div class="container py-5">
               <div class="row mt-5">
                 <div class="col-md-4 offset-md-1 py-3">
@@ -358,7 +467,7 @@
                     <p class="text-justifyy">Many students preparing for BBA and MBA entrance exams lack awareness, guidance, and direction in cracking the exam and choosing the right college. We allocate a dedicated mentor to every student to support throughout the preparation journey. </p>
                 </div>
                 <div class="col-md-7">
-                    <div id="aboutUsSlider" class="carousel carousel-dark slide" data-bs-ride="carousel" style="width:100%;overflow:hidden;">
+                    <div id="aboutUsSlider" class=" shadow carousel slide carousel-fade" data-bs-ride="carousel" style="width:100%;overflow:hidden;">
                         <div class="carousel-indicators">
                           <button type="button" data-bs-target="#aboutUsSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                           <button type="button" data-bs-target="#aboutUsSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -406,45 +515,23 @@
 
       </section>
 
-      <!-- personal mentoring session -->
-      <section id="mentoring">
-          <div class="container py-5">
-              <div class="row">
-                <h2 class="text-center text-uppercase">One on One Personal Mentoring</h2>
-                  <div class="col-md-6 offset-md-1 align-self-center">
-                      <p class="text-justifyy">A personal mentor is assigned to the student who will guide the student at every step of the preparation journey.</p>
-                      <p class="text-justifyy">Mentor will cater to all of the student's academic problems and help them to get through it. Mentor will be a constant companion of the student in this preparation journey</p>
-
-                      <div class="d-flex justify-content-center">
-                      <button type="button" class="btn shadow-sm btn-outline-danger my-3" data-bs-toggle="modal" data-bs-target="#bookSession">
-                          Book FREE Mentoring Session
-                        </button>
-                        </div>
-                  </div>
-                  <div class="col-md-5">
-                      <img src="assets/oneonone.png" class="img-fluid" alt="personal mentoring sessions">
-                  </div>
-              </div>
-          </div>
-      </section>
-
       <!-- our team -->
       <section id="team" class="bg-light">
           <div class="container py-5">
               <div class="row">
                 <h2 class="text-center mb-5">FOUNDERS</h2>
                 <div class="mt-5"></div>
-                <div class="col-md-2 offset-md-4">
-                    <div class="card text-dark bg-light" >
+                <div class="col-sm-2 offset-sm-4">
+                    <div class="card text-dark bg-white" >
                         <img src="assets/rama.png" class="card-img-top shadow p-2 bg-primary custom-thumbnail-2" alt="ipmat course">
                         <div class="card-body">
                             <h5 class="card-title text-center">Rama Krishna P</h5>
                             <p class="card-text text-center">IIM Udaipur</p>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="card text-dark bg-light" >
+                </div> 
+                <div class="col-sm-2">
+                    <div class="card text-dark bg-white" >
                         <img src="assets/rama.png" class="card-img-top shadow p-2 bg-primary custom-thumbnail-2" alt="ipmat course">
                         <div class="card-body">
                             <h5 class="card-title text-center">Rama Krishna P</h5>
@@ -460,7 +547,7 @@
                 <h2 class="text-center mb-5">SUPPORT TEAM</h2>
                 <div class="mt-5"></div>
                 <div class="col-md-2 offset-md-2">
-                    <div class="card text-dark bg-light" >
+                    <div class="card text-dark bg-white" >
                         <img src="assets/siti.png" class="card-img-top shadow p-2 bg-danger custom-thumbnail-2" alt="ipmat course">
                         <div class="card-body">
                             <h5 class="card-title text-center">Sitikantha</h5>
@@ -469,7 +556,7 @@
                     </div>
                 </div>
                 <div class="col-md-2">
-                    <div class="card text-dark bg-light" >
+                    <div class="card text-dark bg-white" >
                         <img src="assets/ram.png" class="card-img-top shadow p-2 bg-success custom-thumbnail-2" alt="ipmat course">
                         <div class="card-body">
                             <h5 class="card-title text-center">Ram Pavan</h5>
@@ -478,7 +565,7 @@
                     </div>
                 </div>
                 <div class="col-md-2">
-                    <div class="card text-dark bg-light" >
+                    <div class="card text-dark bg-white" >
                         <img src="assets/sriram.png" class="card-img-top shadow p-2 bg-warning custom-thumbnail-2" alt="ipmat course">
                         <div class="card-body">
                             <h5 class="card-title text-center">Sriram</h5>
@@ -487,7 +574,7 @@
                     </div>
                 </div>
                 <div class="col-md-2">
-                    <div class="card text-dark bg-light" >
+                    <div class="card text-dark bg-white" >
                         <img src="assets/sarat.png" class="card-img-top shadow p-2 bg-primary custom-thumbnail-2" alt="ipmat course">
                         <div class="card-body">
                             <h5 class="card-title text-center">Sarat</h5>
@@ -500,7 +587,7 @@
       </section>
 
       <!-- faqs -->
-      <section id="faqs">
+      <section id="faqs" class="">
           <div class="container py-5">
               <div class="row">
                 <h2 class="text-center mb-5">FAQs</h2>
@@ -552,8 +639,8 @@
                         </div>
                     </div>
 
-                    <div class="d-flex justify-content-center pt-3">
-                        <a href="faqs.html" class="btn shadow-sm btn-outline-danger my-3" >
+                    <div class="d-flex justify-content-center pt-5">
+                        <a href="faqs.html" class="btn shadow-sm btn-outline-danger" >
                         SEE ALL QUESTIONS
                         </a>
                     </div>
@@ -567,37 +654,49 @@
       <!-- footer -->
 
       <section id="footer" class="bg-light">
-        <div class="container-lg py-3">
+        <div class="container-fluid pt-4 px-5">
             <div class="row">
-                <div class="col-sm-6">
-                    <img src="assets/Think_Plus_Logo_SVG.svg" alt="thinkplus logo" width="100" class="img-fluid">
-                    <div class="ms-3">
-                        <p class="text-muted h4">Think Plus Education</p>
-                        <p class="lead small">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-left-dots" viewBox="0 0 16 16">
-                                <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
-                                <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
-                              </svg> 
-                             Contact Us</p>
+                <div class="col-md-4 text-center">
+                    <h5>QUICK LINKS</h5>
+                    <a href="" class="text-muted text-decoration-none"><p class="lead">Download Brochure <i class="bi bi-cloud-download"></i></p></a>
+                    <a href="" class="text-muted text-decoration-none"><p class="lead">IPMAT 2022</p></a>
+                    <a href="" class="text-muted text-decoration-none"><p class="lead">CAT 2022</p></a>
+                    <a href="" class="text-muted text-decoration-none"><p class="lead">FAQS</p></a>
+                </div>
+
+                <div class="col-md-4 text-center mb-5">
+                    <img src="assets/Think_Plus_Logo_PNG.png" style="overflow: hidden; height: 100px!important;" class="img-fluid" alt="">
+                    <!-- <h5 class="mt-5">CONNECT WITH US</h5> -->
+                    <div class="d-block pt-4">
+                        <a href="" class="m-2 text-reset"><i class="fs-2 bi bi-linkedin"></i></a>
+                        <a href="" class="m-2 text-reset"><i class="fs-2 bi bi-facebook"></i></a>
+                        <a href="" class="m-2 text-reset"><i class="fs-2 bi bi-youtube"></i></a>
+                        <a href="" class="m-2 text-reset"><i class="fs-2 bi bi-instagram"></i></a>
                     </div>
                 </div>
-                <div class="col-sm-6 text-center">
-                    <p class="lead">Links</p>
-                    <ul class="navbar-nav">
-                        <a class="nav-link text-reset" aria-current="page" href="#">Assessment</a>
-                        <a class="nav-link text-reset" aria-current="page" href="#">Courses</a>
-                        <a class="nav-link text-reset" aria-current="page" href="#">Pricing</a>
-                        <a class="nav-link text-reset" aria-current="page" href="#">About</a>
-                        <a class="nav-link text-reset" aria-current="page" href="#">Help</a>
-                    </ul>
+
+                <div class="col-md-4 align-self-center text-center">
+
+                    <h5>CONTACT US</h5>
+                    <p>
+                        <span class="d-block">founder@thinkpluseducation.com</span>
+                        <span class="d-block">+91-7396653357,+91-8125442244</span>
+                    </p>
+                    <div class="p-2"></div>
+                    <h5>ADDRESS</h5>
+                    <p>
+                        <span class="d-block">irjoijwfwfowjoifjoifjeowijfiwjwwijei</span>
+                        <span class="d-block">wnefuwfuwou,wfenuwfuwnfou</span>
+                    </p>
                 </div>
+
+                <div class="p-2"></div>
+                
+                <hr>
+                <p class="fst-italic small text-center">
+                    Copyright © 2022 Think Plus Education Technologies Pvt. Ltd.
+                </p>
             </div>
-
-            <hr>
-
-            <p class="fst-italic small text-center">
-                Copyright © 2022 Think Plus Education Technologies Pvt. Ltd.
-            </p>
         </div>
       </section>
 
