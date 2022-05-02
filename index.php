@@ -1,193 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Think Plus Education</title>
-  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-  <style>
-      .bg-white { background-color: white; }
-      .text-justifyy { text-align: justify; }
-      .custom-thumbnail { 
-        height: 100px!important;
-        width:100px!important;
-        border-radius: 50px;
-        margin: 0 auto;
-        margin-bottom: -40px;
-      }
-      .custom-thumbnail-2 {
-          margin: 0 auto;
-          margin-top: -65px;
-          height: 130px!important;
-          width: 130px!important;
-          border-radius: 65px;
-      }
-      .bg-grey { background-color: #e4e2e7;}
-      .bg-grey2 { background-color: #d9d9d9;}
-      .testimonial-bg { 
-          background-color: #d9d9d9;
-          border-radius: 30px;
-          padding-top: 60px;
-        }
-        
-        .bg-red-gradient {
-            background-image: linear-gradient(to right, #dd5071, #fc6667);
-            border-radius: 25px;
-        }
-
-        .fixed-button {
-            right: 2vh;
-            bottom: 2vh;
-            z-index: 100;
-        }
-
-        @media only screen and (min-width: 721px) {
-            .testimonial-bg { height: 420px!important; }
-        }
-      
-  </style>
-</head>
-<body>
+<?php 
+    $title = "Think Plus Education";
+    include("header.php");
+?>
 
     <!-- pending:
         nav > courses > cat page
-        nav > courses > ipmat page
         nav > login functionality
         nav > register
         intro > book session functionality
         intro > test form functionality
         intro > tooltips
+        testimonials > aspirant photos
+        team > 2 founders?
         faqs page
         footer > put social links
         footer > put quick links
     -->
-
-    <div id="header"></div>
-    
-    <!-- navigation header -->
-      <nav class="navbar sticky-top bg-white navbar-expand-sm navbar-light shadow-sm">
-          <div class="container-lg">
-              <a class="navbar-brand" href="#header">
-                  <img src="assets/Think_Plus_Logo_PNG.png" alt="thinkplus logo" width="80" class="img-fluid">
-                  <!-- <span class="fw-bold text-secondary">Think Plus Education</span> -->
-                </a>
-
-              <!-- navigation toggle for small screens -->
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
-                  aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-
-              <!-- navigation links -->
-              <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
-                  <ul class="navbar-nav">
-                      <li class="mx-2 nav-item  dropdown">
-                        <a class="nav-link dropdown-toggle shadow-sm btn btn-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Courses
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="ipmat.html">IPMAT</a></li>
-                          <li><a class="dropdown-item" href="cat.html">CAT</a></li>
-                        </ul>
-                      </li>
-                      <li class="mx-2 nav-item ">
-                          <a class="nav-link shadow-sm btn btn-light" aria-current="page" href="#about-us">
-                          About Us
-                          </a>
-                      </li>  
-                      <li class="mx-2 nav-item ">
-                        <a class="nav-link shadow-sm btn btn-light" aria-current="page" href="#footer">
-                        Contact
-                        </a>
-                    </li>
-                      
-                    <li class="nav-item">
-                        <a class="nav-link py-1" aria-current="page">
-                            <button type="button" class="shadow-sm btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
-                                Login <i class="bi bi-box-arrow-in-right"></i>
-                            </button>
-                        </a>
-                    </li>       
-                        
-                    
-                      <!-- <li class="nav-item d-none d-sm-inline">
-                          <a class="m-1 shadow-sm btn btn-outline-success align-self-center btn-sm" href="#" role="button"> Register </a>                    
-                      </li> -->
-                      <!-- <li class="nav-item d-sm-none">
-                          <a class="nav-link" href="#">Login</a>  
-                      </li>
-                      <li class="nav-item d-sm-none">
-                          <a class="nav-link" href="#" > Register </a>                    
-                      </li> -->
-                  </ul>
-              </div>
-          </div>
-      </nav>
-
-        <!-- Login Modal -->
-        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content ">
-                <div class="modal-header">
-                <h5 class="container modal-title text-center h5" id="loginLabel">Login</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form action="" id="formBook" method="get">
-                        <div class="mb-3">
-                            <input type="text" class="form-control" id="loginID" name="loginID" required placeholder="Username">
-                        </div>
-                        <div class="mb-3">
-                        <input type="password" class="form-control" id="loginPassword" name="loginPassword" required placeholder="Password">
-                        </div>
-                </div>
-                <div class="modal-footer">
-                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
-                        <button type="submit" class="btn btn-success">Login</button>
-                    </form>
-                    <!-- <button type="button" class="btn btn-success">Submit</button> -->
-                </div>
-            </div>
-            </div>
-        </div>
-
-        <div class="position-fixed fixed-button">
-            <button type="button" class="container shadow btn btn-danger" data-bs-toggle="modal" data-bs-target="#contactUs">
-                Ask Us Anything!
-            </button>
-        </div>
-
-        <!-- Contact Us Modal -->
-        <div class="modal fade" id="contactUs" tabindex="-1" aria-labelledby="contactUsLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content container">
-                <div class="modal-header">
-                <h5 class="container modal-title text-center h5" id="contactUsLabel">Ask Us Anything!</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form action="" id="formBook" method="get">
-                        <div class="mb-3">
-                            <input type="text" class="form-control" id="contactUsID" name="contactUsID" required placeholder="Your Name">
-                        </div>
-                        <div class="mb-3">
-                            <input type="tel" class="form-control" id="contactUsMobile" name="contactUsMobile" required placeholder="Your Contact No.">
-                        </div>
-                        <div class="mb-3">
-                            <textarea type="textarea" class="form-control" id="contactUsQuery" name="contactUsQuery" required placeholder="Your Query"></textarea>
-                        </div>
-                </div>
-                <div class="modal-footer">
-                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
-                        <button type="submit" class="btn btn-success">Send</button>
-                    </form>
-                    <!-- <button type="button" class="btn btn-success">Submit</button> -->
-                </div>
-            </div>
-            </div>
-        </div>
 
       <!-- intro section -->
       <section id="intro" class="shadow-sm">
@@ -281,7 +109,6 @@
 
       </section>
 
-      
         <!-- Why choose us section -->
         <section id="choose-us">
             <div class="container py-5">
@@ -292,22 +119,22 @@
                         <div class="p-3 col-sm-6 col-md-3 text-center">
                             <img src="assets/choose1.png" class="img-fluid d-blcok" style="height: 80px!important;" alt="why coose us image 1">
                             <h5 class="d-block text-white">One on One Mentor</h5>
-                            <p>Each student have a personal mentor for individual attention and guidance.</p>
+                            <p class="text-light">Each student have a personal mentor for individual attention and guidance.</p>
                         </div>
                         <div class="p-3 col-sm-6 col-md-3 text-center">
                             <img src="assets/choose2.png" class="img-fluid d-blcok" style="height: 80px!important;" alt="why coose us image 1">
                             <h5 class="d-block text-white">One on One Mentor</h5>
-                            <p>Each student have a personal mentor for individual attention and guidance.</p>
+                            <p  class="text-light">Each student have a personal mentor for individual attention and guidance.</p>
                         </div>
                         <div class="p-3 col-sm-6 col-md-3 text-center">
                             <img src="assets/choose3.png" class="img-fluid d-blcok" style="height: 80px!important;" alt="why coose us image 1">
                             <h5 class="d-block text-white">One on One Mentor</h5>
-                            <p>Each student have a personal mentor for individual attention and guidance.</p>
+                            <p  class="text-light">Each student have a personal mentor for individual attention and guidance.</p>
                         </div>
                         <div class="p-3 col-sm-6 col-md-3 text-center">
                             <img src="assets/choose4.png" class="img-fluid d-blcok" style="height: 80px!important;" alt="why coose us image 1">
                             <h5 class="d-block text-white">One on One Mentor</h5>
-                            <p>Each student have a personal mentor for individual attention and guidance.</p>
+                            <p  class="text-light">Each student have a personal mentor for individual attention and guidance.</p>
                         </div>
                     </div>
                 </div>
@@ -354,7 +181,7 @@
                             VARC: 100+ Hours of Live Interactive Sessions | 250+ videos | 30+ Assignments
                           </p>
                           <a href="#" class="shadow-sm d-block btn btn-primary mb-3">Enroll Now</a>
-                          <a href="ipmat.html" class="shadow-sm d-block btn btn-outline-danger">Learn More</a>
+                          <a href="ipmat.php" class="shadow-sm d-block btn btn-outline-danger">Learn More</a>
                         </div>
                       </div>
                 </div>
@@ -373,7 +200,7 @@
                                 VARC: 100+ Hours of Live Interactive Sessions | 250+ videos | 30+ Assignments
                           </p>
                           <a href="#" class="shadow-sm d-block btn btn-primary mb-3">Enroll Now</a>
-                          <a href="cat.html" class="shadow-sm d-block btn btn-outline-danger">Learn More</a>
+                          <a href="cat.php" class="shadow-sm d-block btn btn-outline-danger">Learn More</a>
                         </div>
                       </div>
                 </div>
@@ -382,8 +209,6 @@
     </section>
 
 
-
-    
     <!-- testimonials -->
     <section id="testimonials" class="bg-light">
         <div class="container py-5">
@@ -600,122 +425,6 @@
           </div>
       </section>
 
-      <!-- faqs -->
-      <section id="faqs" class="">
-          <div class="container py-5">
-              <div class="row">
-                <h2 class="text-center mb-5">FAQs</h2>
-                <div class="col-md-6 offset-md-3">
-                    <div class="accordion" id="faqsAcc">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                What is IPMAT?
-                            </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqsAcc">
-                            <div class="accordion-body">
-                                The Integrated Programme in Management Aptitude Test (IPMAT) is a test that assesses management aptitude. Various institutes hold their own IPMATs in order to admit students to their 5-year Integrated Management Programme.                        </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Is maths in the IPMAT of the JEE level?
-                            </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqsAcc">
-                            <div class="accordion-body">
-                                There may be few questions of that level as there are few topics in IPMAT QA which are common with JEE. But, not all questions are of that level. So, students who have not prepared for JEE, don’t have to worry much regarding this.                            </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Which IIMs accept IPM ?
-                            </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqsAcc">
-                            <div class="accordion-body">
-                                The Integrated Programme in Management Aptitude Test (IPMAT) is a test that assesses management aptitude. Various institutes hold their own IPMATs in order to admit students to their 5-year Integrated Management Programme. The IPM course is now offered by five IIMs: IIM Indore, IIM Rohtak, IIM Ranchi, IIM Bodhgaya, and IIM Jammu. According to reports, IIM Amritsar plans to begin their curriculum in 2023. Apart from IIMs, the IPM programme is also offered by IIFT Kokinanda, NALSAR, and Nirma University.                            </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingFour">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                What is the difficulty level of IPMAT?
-                            </button>
-                            </h2>
-                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqsAcc">
-                            <div class="accordion-body">
-                                This year, more than 40,000 students are expected to register for IPMAT, with only 600 places available, resulting in a selection ratio of around 1:66. It isn't simple, but with the right approach and assistance, anyone can pass the IPMAT.                            </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="d-flex justify-content-center pt-5">
-                        <a href="faqs.html" class="btn shadow-sm btn-outline-danger" >
-                        SEE ALL QUESTIONS
-                        </a>
-                    </div>
-                </div>
-
-                
-              </div>
-          </div>
-      </section>
-
-      <!-- footer -->
-
-      <section id="footer" class="bg-light">
-        <div class="container-fluid pt-4 px-5">
-            <div class="row">
-                <div class="col-md-4 text-center">
-                    <h5>QUICK LINKS</h5>
-                    <a href="" class="text-muted text-decoration-none"><p class="lead">Download Brochure <i class="bi bi-cloud-download"></i></p></a>
-                    <a href="" class="text-muted text-decoration-none"><p class="lead">IPMAT 2022</p></a>
-                    <a href="" class="text-muted text-decoration-none"><p class="lead">CAT 2022</p></a>
-                    <a href="" class="text-muted text-decoration-none"><p class="lead">FAQS</p></a>
-                </div>
-
-                <div class="col-md-4 text-center mb-5">
-                    <img src="assets/Think_Plus_Logo_PNG.png" style="overflow: hidden; height: 100px!important;" class="img-fluid" alt="">
-                    <!-- <h5 class="mt-5">CONNECT WITH US</h5> -->
-                    <div class="d-block pt-4">
-                        <a href="" class="m-2 text-reset"><i class="fs-2 bi bi-linkedin"></i></a>
-                        <a href="" class="m-2 text-reset"><i class="fs-2 bi bi-facebook"></i></a>
-                        <a href="" class="m-2 text-reset"><i class="fs-2 bi bi-youtube"></i></a>
-                        <a href="" class="m-2 text-reset"><i class="fs-2 bi bi-instagram"></i></a>
-                    </div>
-                </div>
-
-                <div class="col-md-4 align-self-center text-center">
-
-                    <h5>CONTACT US</h5>
-                    <p>
-                        <span class="d-block">founder@thinkpluseducation.com</span>
-                        <span class="d-block">+91-7396653357,+91-8125442244</span>
-                    </p>
-                    <div class="p-2"></div>
-                    <h5>ADDRESS</h5>
-                    <p>
-                        <span class="d-block">irjoijwfwfowjoifjoifjeowijfiwjwwijei</span>
-                        <span class="d-block">wnefuwfuwou,wfenuwfuwnfou</span>
-                    </p>
-                </div>
-
-                <div class="p-2"></div>
-                
-                <hr>
-                <p class="fst-italic small text-center">
-                    Copyright © 2022 Think Plus Education Technologies Pvt. Ltd.
-                </p>
-            </div>
-        </div>
-      </section>
-
-  
-  <script src="bootstrap/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  
-</body>
-</html>
+<?php 
+    include("footer.php");
+?>
