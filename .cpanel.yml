@@ -4,5 +4,5 @@ deployment:
     - export DEPLOYPATH=/home/pke53c5pvtxg/public_html/
     - /bin/cp -R assets $DEPLOYPATH
     - /bin/cp -R bootstrap $DEPLOYPATH
-    - /bin/cp -R Landing_Page $DEPLOYPATH
+    # - /bin/cp -R Landing_Page $DEPLOYPATH
     - /bin/cp * $DEPLOYPATH
