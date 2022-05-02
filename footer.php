@@ -72,8 +72,8 @@
               <div class="col-md-4 text-center">
                   <h5>QUICK LINKS</h5>
                   <a href="" class="text-muted text-decoration-none"><p class="lead">Download Brochure <i class="bi bi-cloud-download"></i></p></a>
-                  <a href="ipmat.php" class="text-muted text-decoration-none"><p class="lead">IPMAT 2022</p></a>
-                  <a href="cat.php" class="text-muted text-decoration-none"><p class="lead">CAT 2022</p></a>
+                  <a href="ipmat.php" class="text-muted text-decoration-none"><p class="lead">IPMAT <?=date('Y')?> </p></a>
+                  <a href="cat.php" class="text-muted text-decoration-none"><p class="lead">CAT <?=date('Y')?></p></a>
                   <a href="faqs.php" class="text-muted text-decoration-none"><p class="lead">FAQS</p></a>
               </div>
 

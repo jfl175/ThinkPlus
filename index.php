@@ -4,17 +4,20 @@
 ?>
 
     <!-- pending:
-        nav > courses > cat page
-        nav > login functionality
-        nav > register
-        intro > book session functionality
-        intro > test form functionality
+        user journey?
+            nav > login functionality
+            nav > register
+            intro > book session functionality
+            intro > test form functionality
+            courses > enroll now
+            ask me anything
+            
         intro > tooltips
-        testimonials > aspirant photos
+        
         team > 2 founders?
-        faqs page
+        faqs on faqs page
         footer > put social links
-        footer > put quick links
+        footer > brochure link
     -->
 
       <!-- intro section -->
@@ -215,7 +218,7 @@
             <div class="row">
                 <h2 class="text-center mb-5">WHAT OUR ASPIRANTS SAY</h2>
                 <div class="col-md-3">
-                    <img src="assets/ram.png" class="img-fluid shadow-sm border d-block custom-thumbnail" alt="aspirant photo 1">
+                    <img src="assets/aspirant1.png" class="img-fluid shadow-sm border d-block custom-thumbnail" alt="aspirant photo 1">
                     <div class="container p-3 pt-5 testimonial-bg">
                         <p class="text-warning text-center">
                             <i class="bi bi-star-fill"></i>
@@ -231,7 +234,7 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <img src="assets/ram.png" class="img-fluid shadow-sm border d-block custom-thumbnail" alt="aspirant photo 1">
+                    <img src="assets/aspirant2.png" class="img-fluid shadow-sm border d-block custom-thumbnail" alt="aspirant photo 1">
                     <div class="container p-3 pt-5 testimonial-bg">
                         <p class="text-warning text-center">
                             <i class="bi bi-star-fill"></i>
@@ -247,7 +250,7 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <img src="assets/ram.png" class="img-fluid shadow-sm border d-block custom-thumbnail" alt="aspirant photo 1">
+                    <img src="assets/aspirant3.png" class="img-fluid shadow-sm border d-block custom-thumbnail" alt="aspirant photo 1">
                     <div class="container p-3 pt-5 testimonial-bg">
                         <p class="text-warning text-center">
                             <i class="bi bi-star-fill"></i>
@@ -263,7 +266,7 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <img src="assets/ram.png" class="img-fluid shadow-sm border d-block custom-thumbnail" alt="aspirant photo 1">
+                    <img src="assets/aspirant4.png" class="img-fluid shadow-sm border d-block custom-thumbnail" alt="aspirant photo 1">
                     <div class="container p-3 pt-5 testimonial-bg">
                         <p class="text-warning text-center">
                             <i class="bi bi-star-fill"></i>

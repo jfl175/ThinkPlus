@@ -8,7 +8,7 @@
         <div class="container py-5">
             <div class="row">
                 <div class="d-flex justify-content-center">
-                    <h1 class="course-heading p-2 px-5 text-white">IPMAT </h1>
+                    <h1 class="course-heading p-2 px-5 text-white">CAT </h1>
                 </div>
                 <div class="m-2"></div>
                 <div class="d-flex justify-content-end">
@@ -17,210 +17,136 @@
                     </button>
                 </div>
                 <div class="col-10 offset-md-1">
-                    <h2>ABOUT IPMAT</h2>
-                    <p class="lead">IPMAT is a five-year IPM admissions test administered by IIM Indore and IIM Rohtak (Integrated Programme in Management). For those who have completed the 12th standard, IIM Indore offers a dual degree programme (Bachelors + Masters). It is a programme that permits students to enrol in an IIM after they have completed their 12th grade. Aspirants must pass the IPMAT exam to be considered for admission to the IPM programme, and those who are shortlisted must subsequently pass the Written Ability Test (WAT), Personal Interview (PI), and Video Assessment (VA) round. IPMAT results are accepted for admission to Nirma University's BBA-MBA integrated programme, in addition to IIM Indore. IIM Rohtak has also launched an Integrated Programme in Management, which is administered by a distinct IPMAT.</p>
+                    <h2>ABOUT CAT ENTRANCE EXAM</h2>
+                    <p class="lead">The Common Admission Test (CAT) is a national management entrance exam for admission to IIMs and other top B-schools. After passing the CAT test, students are eligible for admission to management programmes such as PGP, PGDM, PGPEM, EPGP, PGPBM, and PGPEX at various IIMs around the country. There is no set number of attempts required to pass the CAT. IIMs are required by the Government of India to reserve 15% of seats for SC candidates, 7.5 percent for ST candidates, and 27 percent for NC-OBC candidates. Persons with Benchmark Disabilities are also given 5% of the seats. Scholarships are also available at IIMs for deserving students who require financial assistance. The Indian Institutes of Management are public institutions that have complete autonomy over their day-to-day operations and curriculum. In India, there are currently 20 IIMs operating as public autonomous institutes.</p>
                     
                     <div class="m-5"></div>
 
-                    <h2>WHY IPM COURSE?</h2>
-                    <p class="lead mb-0">1. The Brand Value!</p>
-                    <p class="lead">The unrivalled IIM degree adds significant value to a candidate's resume. Without having to take a separate undergraduate course in any other field of study, a 10+2 student can strive to benefit from this brand value.</p>
-                    
-                    <div class="p-2"></div>
+                    <div class="row">
+                        <div class="col-md-8 offset-md-2">
+                            <h2>General info</h2>
+                            <div class="table-responsive">
+                                <table class="table table-borderless table-hover text-center align-middle">
+                                    <tbody>
+                                    <tr>
+                                        <th scope="row" class="w-25">Name of the Exam</th>
+                                        <td class="w-75"> Common Admission Test (CAT) </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"> CAT Official Website </th>
+                                        <td> <a href="https://iimcat.ac.in/" class="text-body text-decoration-none ">https://iimcat.ac.in/</a> </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"> Conducting Body </th>
+                                        <td> Yet to be announced </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"> Exam Duration </th>
+                                        <td> 2 hours <br> (160 Minutes for PWD candidates) </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <th scope="row"> Exam Date </th>
+                                        <td> 27th November 2022 (Tentative date) </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <th scope="row"> Medium of Exam </th>
+                                        <td> English </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <th scope="row"> Syllabus </th>
+                                        <td> Quantitative Aptiude <br> 
+                                        Logical Reasoning & Data Interpretation <br>
+                                        Verbal Ability & Reading Comprehension </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <th scope="row"> CAT Exam Fees </th>
+                                        <td> "INR 1100 (Reserved categories) <br> INR 2200 (Other categories)" </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <th scope="row"> CAT Exam Question Type </th>
+                                        <td> MCQ and Non-MCQ questions </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <th scope="row"> Eligibility </th>
+                                        <td> "Bachelor’s degree with 50% aggregate <br> (45% aggregate or equivalent for reserved categories)" </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <th scope="row"> CAT Exam Pattern </th>
+                                        <td> Computer Based Test (CBT) </td>
+                                    </tr>
 
-                    <p class="lead mb-0">2. What after 10+2?</p>
-                    <p class="lead">The IPM programme serves as a stepping stone to the top IIMs. Because IPM is attracting the attention of young applicants, it offers an opportunity to get into an IIM when the competition is extremely low. While over lakhs of students took the CAT exam, which is growing at an exponential rate, just about 17550 students took the IPM exam in 2020. When compared to B.Tech graduates who seek an MBA following engineering and spend 6 years doing so, IPM saves students one year because it takes only 5 years to complete.</p>
-                    
-                    <div class="p-2"></div>
-                    
-                    <p class="lead mb-0">3. State-of-the-art curriculum</p>
-                    <p class="lead">A big reason for IPM’s uniqueness is its well-charted curriculum. IPM imparts the necessary knowledge and skills, not just in the field of management but in various other subjects. The students’ intellect is nourished by the world-class IIM faculty.</p>
+                                    </tbody>
+                                </table>
+                            </div>
 
-                    <div class="m-5"></div>
-
-                    <h2 class="text-center">IPMAT COLLEGES</h2>
-                    
-                    <div class="p-2"></div>
-                    
-                    <div class="table-responsive-lg">
-                        <table class="table table-bordered table-hover text-center align-middle">
-                            <thead class="table-light">
-                            <tr >
-                                <th scope="col" class="w-25">Institute</th>
-                                <th scope="col" class="w-25">Course</th>
-                                <th scope="col" class="w-25">Eligibility</th>
-                                <th scope="col" class="w-25">Fees (in Rs.)</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <th scope="row">IIM Ranchi</th>
-                                <td> Integrated Programme in Management (IPM) </td>
-                                <td>Candidates should have a minimum of 60 per cent aggregate or equivalent in Class 10 and 12 (55 per cent for candidates from SC/ST/PwD)</td>
-                                <td>Rs 14 lakh for first three years. For the next two years, course fees will be same as MBA programme</td>
-                            </tr>
-                            <tr>
-                                <th scope="row"> IIM Jammu </th>
-                                <td> Integrated Programme in Management (IPM) </td>
-                                <td> Candidates should have a minimum of 60 per cent aggregate or equivalent in Class 10 and 12 (55 per cent for candidates from SC/ST/PwD) + JIPMAT </td>
-                                <td> Nearly, Rs 13.5 lakh for first three years. For the next two years, course fees will be same as MBA programme </td>
-                            </tr>
-                            <tr>
-                                <th scope="row"> IIM Bodh Gaya </th>
-                                <td> Integrated Programme in Management (IPM) </td>
-                                <td> Candidates should have a minimum of 60 per cent aggregate or equivalent in Class 10 and 12 (55 per cent for candidates from SC/ST/PwD) + JIPMAT </td>
-                                <td> Rs 13.5 lakh for first three years. For the next two years, course fees will be same as MBA programme </td>
-                            </tr>
-                            <tr>
-                                <th scope="row"> IIM Rohtak </th>
-                                <td> Integrated Programme in Management (IPM) </td>
-                                <td> A minimum of 60% aggregate in Class 10 and 12. (55% for Reserved category students) and entrance exam (IPM Aptitude Test) </td>
-                                <td> 4.10 lakh  per year </td>
-                            </tr>
-                            <tr>
-                                <th scope="row"> IIM Indore </th>
-                                <td> Integrated Programme in Management (IPM)  </td>
-                                <td> Class 12 pass and entrance exam (IPMAT) </td>
-                                <td> 4 lakh per year for first three years. Fees of last two years will be same as that of PGP </td>
-                            </tr>
-                            <tr>
-                                <th scope="row"> Xavier University </th>
-                                <td> Integrated MBA in Sustainability Management </td>
-                                <td> Class 12 pass </td>
-                                <td> 8.58 lakh (total fee) </td>
-                            </tr>
-                            <tr>
-                                <th scope="row"> Narsee Monjee Institute of Management Studies </th>
-                                <td> BBA+MMS </td>
-                                <td> Class 12 pass and entrance exam (NPAT) </td>
-                                <td> NA </td>
-                            </tr>
-                            <tr>
-                                <th scope="row"> Nirma University Institute of Management </th>
-                                <td> BBA+MBA (Five Year Integrated) </td>
-                                <td> Class 12 pass and entrance exam (UGAT) </td>
-                                <td> 17.07 lakh </td>
-                            </tr>
-                            <tr>
-                                <th scope="row"> SRM Institute of Science and Technology </th>
-                                <td> MBA (Integrated) </td>
-                                <td> Class 12 pass </td>
-                                <td> 1 lakh per year </td>
-                            </tr>
-                            <tr>
-                                <th scope="row"> Mumbai University </th>
-                                <td> BMS+ MBA </td>
-                                <td> Class 12 pass and entrance exam (MUCMET) </td>
-                                <td> NA </td>
-                            </tr>
-                            <tr>
-                                <th scope="row"> Lucknow University </th>
-                                <td> MBA (Five Years) </td>
-                                <td> Class 12 pass and entrance exam </td>
-                                <td> 30,000 per semester </td>
-                            </tr>
-                            <tr>
-                                <th scope="row"> Jindal Global Business School </th>
-                                <td> Integrated BBA (Hons) + MBA (Five Years) </td>
-                                <td> Minimum 60% aggregate in Class 12 + entrance exam (SAT/UGAT/JSAT exam) </td>
-                                <td> 3.5 lakh per year </td>
-                            </tr>
-                            <tr>
-                                <th scope="row"> Devi Ahilya Vishwavidyalaya, Indore </th>
-                                <td> MBA (Five Years) </td>
-                                <td> Class 12 pass and entrance exam (DAVV CET) </td>
-                                <td> NA </td>
-                            </tr>
-                            <tr>
-                                <th scope="row"> Kurukshetra University </th>
-                                <td> MBA (Five Years) </td>
-                                <td> Class 12 pass + entrance exam and personal interview </td>
-                                <td> NA </td>
-                            </tr>
-                            <tr>
-                                <th scope="row"> NIIT University </th>
-                                <td> Integrated MBA (Four Years) </td>
-                                <td> Class 12 pass </td>
-                                <td> NA </td>
-                            </tr>
-                            </tbody>
-                        </table>
+                        </div>
                     </div>
-                    
-                    <div class="m-5"></div>
-
-                    <h2 class="">IPMAT EXAM PATTERN</h2>
-                    <p class="lead">IPMAT assesses your capacity to think critically. Therefore choosing the proper approach to a topic is crucial. Knowledge of the themes and types of questions asked in these situations is essential. Get a firm grasp on the fundamentals and take practice examinations regularly. Analyze each question to determine your strong and weak points. Read a lot for the Verbal Ability section to improve your reading speed and comprehension. Regularly read newspapers to stay informed about current events, which can aid you in the WAT and PI processes. </p>
 
                     <div class="m-5"></div>
 
-                    <h2 class="">PREPARATION STRATEGY</h2>
-                    <ul >
-                        <li><p class="lead m-0">The candidate must create a schedule based on the syllabus.</p></li>
-                        <li><p class="lead m-0">Ensure that you have covered all of the subjects and concepts.</p></li>
-                        <li><p class="lead m-0">Mock tests and practice tests must be prioritized by the candidate.</p></li>
-                        <li><p class="lead m-0">It's critical to assess your tests, identify your weak spots, and concentrate on improving them.</p></li>
-                        <li><p class="lead m-0">Remember, the principle is always correct. Before answering the question, set aside any additional information about the topic.</p></li>
-                        <li><p class="lead m-0">Apply the concept with rigor to the provided event.</p></li>
-                    </ul>
-
-                    <div class="m-5"></div>
-
-                    <h2 class="text-center">IIMs ADMISSION DETAILS</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2>Why CAT?</h2>
+                            
+                            <ol>
+                                <li class=""><p class="lead">Companies chose students graduating from these prestigious institutes (IIMs) on the basis of substantial packages.</p></li>
+                                <li class=""><p class="lead">The sheer variety of professions available, as well as the increased responsibility and ownership that an MBA provides, make it worthwhile. You can pick from a variety of disciplines, including Marketing, Advertising, Finance, Strategy, and Consulting, among others.</p></li>
+                                <li class=""><p class="lead">You'll need an additional degree to go beyond a certain point in your career. One of the greatest options for higher education in India is to pursue an MBA.</p></li>
+                                <li class=""><p class="lead">If you get an MBA from one of the country's top B-schools, your ability to raise startup money for a new firm improves dramatically. You'll also have the opportunity to interact with some of the brightest minds in the country, allowing you to brainstorm solutions and gain a greater understanding of the situation.</p></li>
+                                <li class=""><p class="lead">An MBA will undoubtedly improve your recognition, networking possibilities, and credibility.</p></li>
+                            </ol>
                     
-                    <div class="p-2"></div>
-                    
-                    <div class="table-responsive-lg">
-                        <table class="table table-bordered table-hover text-center align-middle">
-                            <thead class="table-light">
-                            <tr >
-                                <th scope="col" class="w-25">Colleges</th>
-                                <th scope="col" class="w-50">Eligibility</th>
-                                <th scope="col" class="w-25">Exam Conducted</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <th scope="row">IIM Indore</th>
-                                <td>
-                                    1. Candidate must have been born on or after August 1, 1999 to be considered. Candidates from the SC/ST/PWD categories      will be offered a 5-year age relaxation if they were born on or after August 1, 1994.
-                                    2. Qualification Exam: In 2020, 2021, or 2022, the candidate must have passed Standard XII/HSC or an equivalent test.
-                                    3. Minimum Percentage (%) of marks: Students must have a minimum of 60% in standard X/ SSC and standard XII/ HSC or comparable examinations (55 percent for SC/ST/ PwD candidates).
-                                </td>
-                                <td> IPMAT Indore </td>
-                            </tr>
-                            <tr>
-                                <th scope="row"> IIM Rohtak </th>
-                                <td>
-                                    General, OBC, and EWS: In standard X/ SSC and standard XII/ HSC or equivalent examinations, a minimum of 60% is required.
-                                    Category: SC, ST, and PWD (DAP) In standard X/ SSC and standard XII/ HSC or similar examinations, a minimum of 55 percent is required.
-                                    Candidates must be at least 20 years old before July 31, 2022. Candidates in their final year of grade XII/ HSC or equivalent who are expected to finish by July 31, 2022 will also be considered.
-                                </td>
-                                <td> IPMAT Rohtak </td>
-                            </tr>
-                            <tr>
-                                <th scope="row"> IIM Ranchi </th>
-                                <td> 
-                                    Candidates must have received a grade of 60 percent or above in both the 10th standard/Secondary/SSC Examination and the 12th standard/Higher Secondary/HSC Examination.
-                                    SC/ST/PWD applicants have received a 5% reduction in the exam fee. </td>
-                                <td> SAT/IPMAT Indore </td>
-                            </tr>
-                            <tr>
-                                <th scope="row"> IIM Jammu </th>
-                                <td> 1. In 2020, 2021, or 2022, the candidate must have passed Standard XII/HSC or an equivalent test. A minimum of 60% in standard X/ SSC and standard XII/ HSC or comparable examinations is required (55 percent for applicants from the SC/ST/ PwD category).
-                                    2. Candidates who are expected to finish standard XII/ HSC or equivalent before June 30, 2022 are also eligible to apply. </td>
-                                <td> JIPMAT </td>
-                            </tr>
-                            <tr>
-                                <th scope="row"> IIM Bodhgaya </th>
-                                <td> Age: The candidate must have been born on or after August 1, 2002 (5 years of relaxation will be granted to candidates from the SC/ST/PWD categories who were born on or after August 1, 1997)
-                                    Qualification: In 2020, 2021, or 2022, the candidate must have passed Standard XII/HSC or an equivalent test.
-                                    Minimum percentage of marks (percentage): The candidate must have a minimum of 60% in standard X/ SSC and standard XII/ HSC or comparable examinations (55 percent for SC/ST/ PwD candidates). </td>
-                                <td> JIPMAT </td>
-                            </tr>
-                            </tbody>
-                        </table>
+                        </div>
+                        <div class="col-md-6">
+                            <h2>CAT Top 10 colleges</h2>
+                            <ul>
+                                <li><p class="lead">Indian Institute of Management (IIM) Ahmedabad</p></li>
+                                <li><p class="lead">Indian Institute of Management (IIM) Calcutta</p></li>
+                                <li><p class="lead">Indian Institute of Management (IIM) Bangalore</p></li>
+                                <li><p class="lead">Indian Institute of Management (IIM) Lucknow</p></li>
+                                <li><p class="lead">Indian Institute of Management (IIM) Indore</p></li>
+                                <li><p class="lead">Indian Institute of Management (IIM) Kozhikode</p></li>
+                                <li><p class="lead">SPJIMR, Mumbai</p></li>
+                                <li><p class="lead">MDI Gurgaon</p></li>
+                                <li><p class="lead">FMS New Delhi</p></li>
+                                <li><p class="lead">IMI New Delhi</p></li>
+                                <li><p class="lead">IMT Ghaziabad</p></li>
+                                <li><p class="lead">DMS IIT Delhi</p></li>
+                                <li><p class="lead">SJMSOM IIT Bombay</p></li>
+                            </ul>
+                        </div>
                     </div>
+
+                    <div class="m-5"></div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2>Preparation strategy</h2>
+
+                            <p class="lead">The CAT exam will be divided into three portions. Each section is timed according to its own time limit. Because there is a sectional score cut off in IIMs, you must arrange your preparation section by section to secure a high score in each of the three sections using your well-planned preparation strategy.</p>
+                            
+                            <p class="lead">You should be well-prepared for the CAT exam. Knowing your sectional strengths and weaknesses and working on them now is the best approach to prepare for the CAT exam. You must dedicate roughly 3-4 hours every day from now on to clear CAT with a good score, as there is still time to overcome your weaknesses and further enhance your strong areas.</p>
+                        
+                        </div>
+                        <div class="col-md-6">
+                            <h2>CAT Exam pattern</h2>
+                            
+                            <p class="lead">The CAT exam will be divided into three portions. Each section is timed according to its own time limit. Because there is a sectional score cut off in IIMs, you must arrange your preparation section by section to secure a high score in each of the three sections using your well-planned preparation strategy.</p>
+
+                            <p class="lead">You should be well-prepared for the CAT exam. Knowing your sectional strengths and weaknesses and working on them now is the best approach to prepare for the CAT exam. You must dedicate roughly 3-4 hours every day from now on to clear CAT with a good score, as there is still time to overcome your weaknesses and further enhance your strong areas.</p>
+
+                        </div>
+                    </div>
+
+                    <div class="m-5"></div>
+
                 </div>
             </div>
         </div>

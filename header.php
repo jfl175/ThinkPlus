@@ -38,7 +38,7 @@
                           </a>
                       </li> 
                     <li class="mx-2 nav-item  dropdown">
-                      <a class="nav-link dropdown-toggle shadow-sm btn btn-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <a class="nav-link dropdown-toggle shadow-sm btn btn-light" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Courses
                       </a>
                       <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -142,3 +142,5 @@
           </div>
           </div>
       </div>
+
+
