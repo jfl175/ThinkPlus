@@ -71,8 +71,8 @@
           <div class="row">
               <div class="col-md-4 text-center">
                   <h5>QUICK LINKS</h5>
-                  <a href="" class="text-muted text-decoration-none"><p class="lead">Download IPMAT Brochure <i class="bi bi-cloud-download"></i></p></a>
-                  <a href="" class="text-muted text-decoration-none"><p class="lead">Download CAT Brochure <i class="bi bi-cloud-download"></i></p></a>
+                  <a href="assets/IPMAT_Brochure.pdf" download class="text-muted text-decoration-none"><p class="lead">Download IPMAT Brochure <i class="bi bi-cloud-download"></i></p></a>
+                  <a href="assets/CAT_Brochure.pdf" download class="text-muted text-decoration-none"><p class="lead">Download CAT Brochure <i class="bi bi-cloud-download"></i></p></a>
                   <a href="ipmat.php" class="text-muted text-decoration-none"><p class="lead">IPMAT <?=date('Y')?> </p></a>
                   <a href="cat.php" class="text-muted text-decoration-none"><p class="lead">CAT <?=date('Y')?></p></a>
                   <a href="faqs.php" class="text-muted text-decoration-none"><p class="lead">FAQS</p></a>
@@ -82,10 +82,10 @@
                   <img src="assets/Think_Plus_Logo_PNG.png" style="overflow: hidden; height: 100px!important;" class="img-fluid" alt="">
                   <!-- <h5 class="mt-5">CONNECT WITH US</h5> -->
                   <div class="d-block pt-4">
-                      <a href="" class="m-2 text-reset"><i class="fs-2 bi bi-linkedin"></i></a>
-                      <a href="" class="m-2 text-reset"><i class="fs-2 bi bi-facebook"></i></a>
-                      <a href="" class="m-2 text-reset"><i class="fs-2 bi bi-youtube"></i></a>
-                      <a href="" class="m-2 text-reset"><i class="fs-2 bi bi-instagram"></i></a>
+                      <a href="https://www.linkedin.com/company/81343328"  target="_blank" class="m-2 text-reset"><i class="fs-2 bi bi-linkedin"></i></a>
+                      <!-- <a href=""  target="_blank" class="m-2 text-reset"><i class="fs-2 bi bi-facebook"></i></a>
+                      <a href=""  target="_blank" class="m-2 text-reset"><i class="fs-2 bi bi-youtube"></i></a> -->
+                      <a href="https://www.instagram.com/thinkpluseducation"  target="_blank" class="m-2 text-reset"><i class="fs-2 bi bi-instagram"></i></a>
                   </div>
               </div>
 
