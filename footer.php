@@ -71,7 +71,8 @@
           <div class="row">
               <div class="col-md-4 text-center">
                   <h5>QUICK LINKS</h5>
-                  <a href="" class="text-muted text-decoration-none"><p class="lead">Download Brochure <i class="bi bi-cloud-download"></i></p></a>
+                  <a href="" class="text-muted text-decoration-none"><p class="lead">Download IPMAT Brochure <i class="bi bi-cloud-download"></i></p></a>
+                  <a href="" class="text-muted text-decoration-none"><p class="lead">Download CAT Brochure <i class="bi bi-cloud-download"></i></p></a>
                   <a href="ipmat.php" class="text-muted text-decoration-none"><p class="lead">IPMAT <?=date('Y')?> </p></a>
                   <a href="cat.php" class="text-muted text-decoration-none"><p class="lead">CAT <?=date('Y')?></p></a>
                   <a href="faqs.php" class="text-muted text-decoration-none"><p class="lead">FAQS</p></a>
@@ -88,7 +89,8 @@
                   </div>
               </div>
 
-              <div class="col-md-4 align-self-center text-center">
+              <div class="col-md-4 text-center">
+              <!-- <div class="col-md-4 align-self-center text-center"> -->
 
                   <h5>CONTACT US</h5>
                   <p>
@@ -96,11 +98,11 @@
                       <span class="d-block">+91-7396653357,+91-8125442244</span>
                   </p>
                   <div class="p-2"></div>
-                  <h5>ADDRESS</h5>
+                  <!-- <h5>ADDRESS</h5>
                   <p>
                       <span class="d-block">irjoijwfwfowjoifjoifjeowijfiwjwwijei</span>
                       <span class="d-block">wnefuwfuwou,wfenuwfuwnfou</span>
-                  </p>
+                  </p> -->
               </div>
 
               <div class="p-2"></div>

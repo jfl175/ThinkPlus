@@ -19,7 +19,7 @@
     <nav class="navbar sticky-top bg-white navbar-expand-sm navbar-light shadow-sm">
         <div class="container-lg">
             <a class="navbar-brand" href="index.php#header">
-                <img src="assets/Think_Plus_Logo_PNG.png" alt="thinkplus logo" width="80" class="img-fluid">
+                <img src="assets/Think_Plus_Logo_PNG.png" alt="thinkplus logo" width="90" class="img-fluid">
                 <!-- <span class="fw-bold text-secondary">Think Plus Education</span> -->
               </a>
 
@@ -30,13 +30,19 @@
             </button>
 
             <!-- navigation links -->
-            <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+            <div class="collapse navbar-collapse justify-content-end" id="main-nav">
+
                 <ul class="navbar-nav">
-                      <li class="mx-2 nav-item ">
-                          <a class="nav-link shadow-sm btn btn-light" aria-current="page" href="index.php#header">
-                          Home
-                          </a>
-                      </li> 
+                    <li class="mx-2 nav-item ">
+                        <a class="nav-link shadow-sm btn btn-light" aria-current="page" href="index.php#header">
+                        Home
+                        </a>
+                    </li> 
+                    <li class="mx-2 nav-item ">
+                        <a class="nav-link shadow-sm btn btn-light" aria-current="page" href="roadmap.php">
+                        Roadmap
+                        </a>
+                    </li> 
                     <li class="mx-2 nav-item  dropdown">
                       <a class="nav-link dropdown-toggle shadow-sm btn btn-light" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Courses
@@ -47,7 +53,7 @@
                       </ul>
                     </li>
                     <li class="mx-2 nav-item ">
-                        <a class="nav-link shadow-sm btn btn-light" aria-current="page" href="#about-us">
+                        <a class="nav-link shadow-sm btn btn-light" aria-current="page" href="index.php#about-us">
                         About Us
                         </a>
                     </li>  
@@ -76,6 +82,7 @@
                         <a class="nav-link" href="#" > Register </a>                    
                     </li> -->
                 </ul>
+
             </div>
         </div>
     </nav>
