@@ -29,11 +29,11 @@
                   </div>
                   <div class="col-md-3 offset-md-1">
 
-                  <div class="float-end">
+                  <!-- <div class="float-end">
                     <button type="button" class="btn shadow btn-danger my-3" data-bs-toggle="modal" data-bs-target="#registerModal">
                         Register Now
                     </button>
-                    </div>
+                    </div> -->
 
                     <button type="button" class="container btn shadow btn-danger my-3" data-bs-toggle="modal" data-bs-target="#bookSession">
                         Book FREE Mentoring Session
@@ -242,7 +242,7 @@
                             <p class="card-text">
                                 VARC: 100+ Hours of Live Interactive Sessions | 90+ Mock Tests | 65+ in class tests | 50+ concept sheets
                           </p>
-                          <a href="#" class="shadow-sm d-block btn btn-primary mb-3">Enroll Now</a>
+                          <a href="ipmat.php" class="shadow-sm d-block btn btn-primary mb-3 disabled">Enroll Now</a>
                           <a href="ipmat.php" class="shadow-sm d-block btn btn-outline-danger">Learn More</a>
                         </div>
                       </div>

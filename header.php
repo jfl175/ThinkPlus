@@ -68,13 +68,13 @@
                       </a>
                   </li>
                     
-                  <li class="nav-item">
+                  <!-- <li class="nav-item">
                       <a class="nav-link py-1" aria-current="page">
                           <button type="button" class="shadow-sm btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
                               Login <i class="bi bi-box-arrow-in-right"></i>
                           </button>
                       </a>
-                  </li>       
+                  </li>        -->
                       
                   
                     <!-- <li class="nav-item d-none d-sm-inline">
