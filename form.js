@@ -2,18 +2,18 @@
 $(document).ready(function(){
     $('#formMentor').submit(function(e){
     e.preventDefault();
-    var bookName = $('#bookName').val();
-    var bookMobile = $('#bookMobile').val();
-    var bookEmail = $('#bookEmail').val();
-    var bookDate = $('#bookDate').val();
-    var formName = 'mentor';
+    var fullname = $('#bookName').val();
+    var phone = $('#bookMobile').val();
+    var email = $('#bookEmail').val();
+    var sessionDate = $('#bookDate').val();
+    var form = 'mentor';
 
     $.post('frontController.php', {
-        bookName: bookName, 
-        bookMobile: bookMobile, 
-        bookEmail: bookEmail, 
-        bookDate: bookDate,
-        form: formName
+        fullname: fullname, 
+        phone: phone, 
+        email: email, 
+        sessionDate: sessionDate,
+        form: form
     }).done(function(data){
             console.log('Booking details saved');
             console.log(data);
@@ -25,18 +25,18 @@ $(document).ready(function(){
 $(document).ready(function(){
     $('#formTest').submit(function(e){
     e.preventDefault();
-    var testName = $('#testName').val();
-    var testMobile = $('#testMobile').val();
-    var testEmail = $('#testEmail').val();
-    var testExam = $('#testExam').val();
-    var formName = 'test';
+    var fullname = $('#testName').val();
+    var phone = $('#testMobile').val();
+    var email = $('#testEmail').val();
+    var exam = $('#testExam').val();
+    var form = 'test';
     
     $.post('frontController.php', {
-        testName: testName, 
-        testMobile: testMobile, 
-        testEmail: testEmail, 
-        testExam: testExam,
-        form: formName
+        fullname: fullname, 
+        phone: phone, 
+        email: email, 
+        exam: exam,
+        form: form
     }).done(function(data){
             console.log('Assesment Test details saved');
             console.log(data);
@@ -49,16 +49,16 @@ $(document).ready(function(){
 $(document).ready(function(){
     $('#formContact').submit(function(e){
     e.preventDefault();
-    var contactID = $('#contactUsID').val();
-    var contactMobile = $('#contactUsMobile').val();
-    var contactQuery = $('#contactUsQuery').val();
-    var formName = 'contact';
+    var fullname = $('#contactName').val();
+    var phone = $('#contactMobile').val();
+    var message = $('#contactQuery').val();
+    var form = 'contact';
 
     $.post('frontController.php', {
-        contactID: contactID, 
-        contactMobile: contactMobile, 
-        contactQuery: contactQuery,
-        form: formName
+        fullname: fullname, 
+        phone: phone, 
+        message: message,
+        form: form
     }).done(function(data){
             console.log('Contact-us details saved');
             console.log(data);

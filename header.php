@@ -137,13 +137,13 @@
               <div class="modal-body">
                   <form action="" id="formContact" method="get">
                       <div class="mb-3">
-                          <input type="text" class="form-control" id="contactUsID" name="contactUsID" required placeholder="Your Name">
+                          <input type="text" class="form-control" id="contactName" name="contactName" required placeholder="Your Name">
                       </div>
                       <div class="mb-3">
-                          <input type="tel" class="form-control" id="contactUsMobile" name="contactUsMobile" required placeholder="Your Contact No.">
+                          <input type="tel" class="form-control" id="contactMobile" name="contactMobile" required placeholder="Your Contact No.">
                       </div>
                       <div class="mb-3">
-                          <textarea type="textarea" class="form-control" id="contactUsQuery" name="contactUsQuery" required placeholder="Your Query"></textarea>
+                          <textarea type="textarea" class="form-control" id="contactQuery" name="contactQuery" required placeholder="Your Query"></textarea>
                       </div>
               </div>
               <div class="modal-footer">
