@@ -1,3 +1,8 @@
+<script
+  src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+  integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+  crossorigin="anonymous"></script>
+
 <?php 
     $title = "Think Plus Education";
     include("header.php");
@@ -88,7 +93,7 @@
                     </div>
                     <div class="modal-body">
                         <p>Kindly provide your details</p>
-                        <form action="" id="formBook" method="get">
+                        <form action="" id="formMentor" method="get">
                             <div class="mb-3">
                                 <input type="text" class="form-control" id="bookName" name="bookName" required placeholder="Name">
                             </div>
@@ -112,6 +117,26 @@
                 </div>
                 </div>
             </div>
+            <script>
+                $(document).ready(function(){
+                    $('#formMentor').submit(function(e){
+                    e.preventDefault();
+                    var bookName = $('#bookName').val();
+                    var bookMobile = $('#bookMobile').val();
+                    var bookEmail = $('#bookEmail').val();
+                    var bookDate = $('#bookDate').val();
+
+                    // var url = $(this).attr('action');
+
+                    // $.post(url, {bookName:bookName, bookMobile:bookMobile, bookEmail:bookEmail, bookDate:bookDate}).done(
+                    //     function(data){
+                    //         console.log('Booking details saved');
+                    //         console.log(data);
+                    //     }
+                    // )
+                    })
+                })
+            </script>
 
             <!-- test modal -->
             <div class="modal fade" id="test" tabindex="-1" aria-labelledby="testLabel" aria-hidden="true">
@@ -153,6 +178,25 @@
                 </div>
             </div>
 
+            <script>
+                $(document).ready(function(){
+                    $('#formTest').submit(function(e){
+                    e.preventDefault();
+                    var testName = $('#testName').val();
+                    var testMobile = $('#testMobile').val();
+                    var testEmail = $('#testEmail').val();
+                    var testExam = $('#testExam').val();
+                    // var url = $(this).attr('action');
+
+                    // $.post(url, {testName:testName, testMobile:testMobile, testEmail:testEmail, testExam:testExam}).done(
+                    //     function(data){
+                    //         console.log('Assesment Test details saved');
+                    //         console.log(data);
+                    //     }
+                    // )
+                    })
+                })
+            </script>
       </section>
 
         <!-- Why choose us section -->

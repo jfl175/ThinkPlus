@@ -1,3 +1,8 @@
+<script
+  src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+  integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+  crossorigin="anonymous"></script>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -97,7 +102,7 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                  <form action="" id="formBook" method="get">
+                  <form action="" id="formLogin" method="get">
                       <div class="mb-3">
                           <input type="text" class="form-control" id="loginID" name="loginID" required placeholder="Username">
                       </div>
@@ -130,7 +135,7 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                  <form action="" id="formBook" method="get">
+                  <form action="" id="formContact" method="get">
                       <div class="mb-3">
                           <input type="text" class="form-control" id="contactUsID" name="contactUsID" required placeholder="Your Name">
                       </div>
@@ -150,5 +155,25 @@
           </div>
           </div>
       </div>
+
+      <script>
+                $(document).ready(function(){
+                    $('#formContact').submit(function(e){
+                    e.preventDefault();
+                    var contactUsID = $('#contactUsID').val();
+                    var contactUsMobile = $('#contactUsMobile').val();
+                    var contactUsQuery = $('#contactUsQuery').val();
+
+                    // var url = $(this).attr('action');
+
+                    // $.post(url, {contactUsID:contactUsID, contactUsMobile:contactUsMobile, contactUsQuery:contactUsQuery}).done(
+                    //     function(data){
+                    //         console.log('Contact-us details saved');
+                    //         console.log(data);
+                    //     }
+                    // )
+                    })
+                })
+            </script>
 
 
