@@ -1,9 +1,4 @@
-
-  src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-  integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
-  crossorigin="anonymous">
-
-// Mentor
+// Mentor form
 $(document).ready(function(){
     $('#formMentor').submit(function(e){
     e.preventDefault();
@@ -12,7 +7,7 @@ $(document).ready(function(){
     var bookEmail = $('#bookEmail').val();
     var bookDate = $('#bookDate').val();
 
-    // var url = $(this).attr('action');
+    // var url = 'frontController.php';
 
     // $.post(url, {bookName:bookName, bookMobile:bookMobile, bookEmail:bookEmail, bookDate:bookDate}).done(
     //     function(data){
@@ -23,7 +18,7 @@ $(document).ready(function(){
     })
 })
 
-// Test
+// Test your ability form
 $(document).ready(function(){
     $('#formTest').submit(function(e){
     e.preventDefault();
@@ -31,26 +26,28 @@ $(document).ready(function(){
     var testMobile = $('#testMobile').val();
     var testEmail = $('#testEmail').val();
     var testExam = $('#testExam').val();
-    // var url = $(this).attr('action');
+    
+    // var url = 'frontController.php';
 
     // $.post(url, {testName:testName, testMobile:testMobile, testEmail:testEmail, testExam:testExam}).done(
     //     function(data){
     //         console.log('Assesment Test details saved');
-    console.log(testName);
+    // console.log(testName);
     //     }
     // )
     })
 })
+
+
 // Contact-us
-<script>
 $(document).ready(function(){
     $('#formContact').submit(function(e){
     e.preventDefault();
-    var contactUsID = $('#contactUsID').val();
-    var contactUsMobile = $('#contactUsMobile').val();
-    var contactUsQuery = $('#contactUsQuery').val();
+    var contactID = $('#contactUsID').val();
+    var contactMobile = $('#contactUsMobile').val();
+    var contactQuery = $('#contactUsQuery').val();
 
-    // var url = $(this).attr('action');
+    // var url = 'frontController.php';
 
     // $.post(url, {contactUsID:contactUsID, contactUsMobile:contactUsMobile, contactUsQuery:contactUsQuery}).done(
     //     function(data){
@@ -58,6 +55,6 @@ $(document).ready(function(){
     //         console.log(data);
     //     }
     // )
-    console.log(contactUsMobile);
+    // console.log(contactUsMobile);
     })
 })
