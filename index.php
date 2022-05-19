@@ -100,7 +100,7 @@
                                     <input type="email" class="form-control" id="bookEmail" name="bookEmail" required placeholder="Email address">
                                 </div>
                                 <div class="mb-3">
-                                    <input type="date" class="form-control" id="bookDate" name="bookDate" min="<?php echo date('Y-m-j',strtotime("+1 days"));?>" value="<?php echo date('Y-m-j',strtotime("+1 days"));?>" required placeholder="Prefferred date">
+                                    <input type="date" class="form-control" id="bookDate" name="bookDate" min="<?php echo date('Y-m-j',strtotime("+2 days"));?>" value="<?php echo date('Y-m-j',strtotime("+2 days"));?>" required placeholder="Prefferred date">
                                 </div>
                         </div>
                     </div>
