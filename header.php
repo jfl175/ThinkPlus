@@ -1,7 +1,6 @@
-<script
-  src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-  integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
-  crossorigin="anonymous"></script>
+<?php 
+    require_once 'config.php';
+?>
 
 <!DOCTYPE html>
 <html lang="en">
