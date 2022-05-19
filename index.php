@@ -88,7 +88,7 @@
                     </div>
                     <div class="modal-body">
                         <p>Kindly provide your details</p>
-                        <form action="" id="formBook" method="get">
+                        <form action="" id="formMentor" method="get">
                             <div class="mb-3">
                                 <input type="text" class="form-control" id="bookName" name="bookName" required placeholder="Name">
                             </div>
@@ -112,6 +112,7 @@
                 </div>
                 </div>
             </div>
+            
 
             <!-- test modal -->
             <div class="modal fade" id="test" tabindex="-1" aria-labelledby="testLabel" aria-hidden="true">
@@ -153,6 +154,7 @@
                 </div>
             </div>
 
+            
       </section>
 
         <!-- Why choose us section -->
