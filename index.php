@@ -81,31 +81,32 @@
           <!-- book session modal -->
             <div class="modal fade" id="bookSession" tabindex="-1" aria-labelledby="bookSessionLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content ">
+                <div class="modal-content">
                     <div class="modal-header">
                     <h5 class="container modal-title text-center h5" id="bookSessionLabel">Your FREE Mentoring Session</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <p>Kindly provide your details</p>
-                        <form action="" id="formMentor" method="get">
-                            <div class="mb-3">
-                                <input type="text" class="form-control" id="bookName" name="bookName" required placeholder="Name">
-                            </div>
-                            <div class="mb-3">
-                                <input type="tel" class="form-control" id="bookMobile" name="bookMobile" required placeholder="Phone number (10 digits)">
-                            </div>
-                            <div class="mb-3">
-                                <input type="email" class="form-control" id="bookEmail" name="bookEmail" required placeholder="Email address">
-                            </div>
-                            <div class="mb-3">
-                                <input type="date" class="form-control" id="bookDate" name="bookDate" min="<?php echo date('Y-m-j',strtotime("+1 days"));?>" value="<?php echo date('Y-m-j',strtotime("+1 days"));?>" required placeholder="Prefferred date">
-                            </div>
+                        <div id="mentorModalContent">
+                            <p>Kindly provide your details</p>
+                            <form action="" id="formMentor" method="get">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" id="bookName" name="bookName" required placeholder="Name">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="tel" class="form-control" id="bookMobile" name="bookMobile" required placeholder="Phone number (10 digits)">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" id="bookEmail" name="bookEmail" required placeholder="Email address">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="date" class="form-control" id="bookDate" name="bookDate" min="<?php echo date('Y-m-j',strtotime("+1 days"));?>" value="<?php echo date('Y-m-j',strtotime("+1 days"));?>" required placeholder="Prefferred date">
+                                </div>
+                        </div>
                     </div>
-                    <div class="modal-footer">
-                        
+                    <div class="modal-footer" id="mentorModalFooter">
                             <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
-                            <button type="submit" class="btn btn-success">Submit</button>
+                            <button type="submit" id="mentorSubmit" class="btn btn-success">Submit</button>
                         </form>
                         <!-- <button type="button" class="btn btn-success">Submit</button> -->
                     </div>
@@ -146,7 +147,7 @@
                     <div class="modal-footer">
                         
                             <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
-                            <button type="submit" class="btn btn-success">Start Test</button>
+                            <button type="submit" id="testSubmit" class="btn btn-success">Start Test</button>
                         </form>
                         <!-- <button type="button" class="btn btn-success">Submit</button> -->
                     </div>
