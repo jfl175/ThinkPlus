@@ -115,8 +115,9 @@
       </div>
     </section>
 
-
-<script src="bootstrap/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="form.js" crossorigin="anonymous"></script>
 
 </body>
 </html> 
