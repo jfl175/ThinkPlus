@@ -156,24 +156,6 @@
           </div>
       </div>
 
-      <script>
-                $(document).ready(function(){
-                    $('#formContact').submit(function(e){
-                    e.preventDefault();
-                    var contactUsID = $('#contactUsID').val();
-                    var contactUsMobile = $('#contactUsMobile').val();
-                    var contactUsQuery = $('#contactUsQuery').val();
-
-                    // var url = $(this).attr('action');
-
-                    // $.post(url, {contactUsID:contactUsID, contactUsMobile:contactUsMobile, contactUsQuery:contactUsQuery}).done(
-                    //     function(data){
-                    //         console.log('Contact-us details saved');
-                    //         console.log(data);
-                    //     }
-                    // )
-                    })
-                })
-            </script>
+      
 
 
