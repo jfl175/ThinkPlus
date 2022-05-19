@@ -18,7 +18,7 @@
                 $newID = 1;
             }
 
-            $ref = 'FMS' . date('ymd') . $newID;
+            $ref = 'FMS' . date('ym') . $newID;
 
             $sql = "INSERT INTO mentor_sessions (`fullname`, `phone`, `email`, `session_date`, `ref_no`, `status`)
                     VALUES ('".test_input($_POST['fullname'])."',
@@ -27,19 +27,18 @@
                     '".test_input($_POST['sessionDate'])."', 
                     '$ref',
                     '1')";
-        }
 
-        if ($conn->query($sql) === TRUE) {
-            $result['code'] = 200;
-            $result['ref'] = $ref;
-            $result['timezone'] = date_default_timezone_get();;
-                        
-            echo json_encode($result);
-        } else {
-            echo "Error: " . $sql . "<br>" . $conn->error;
+            if ($conn->query($sql) === TRUE) {
+                $result['code'] = 200;
+                $result['ref'] = $ref;
+                            
+                echo json_encode($result);
+            } else {
+                echo "Error: " . $sql . "<br>" . $conn->error;
+            }
+            
+            $conn->close();
         }
-        
-        $conn->close();
     }
 
 
