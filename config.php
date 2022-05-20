@@ -1,5 +1,5 @@
 <?php 
-
+    
     error_reporting(E_ALL & ~E_NOTICE);
 
     if($_SERVER["HTTPS"] != "on" AND $_SERVER['CONTEXT_DOCUMENT_ROOT'] != "C:/wamp64/www/ThinkPlus")

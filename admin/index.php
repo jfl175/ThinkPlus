@@ -4,6 +4,9 @@
 
 	include("header.php");
 
+	header("Location: mentoring.php");
+	die();
+
 ?>
 
 			<main class="content">

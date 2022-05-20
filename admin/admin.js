@@ -1,6 +1,6 @@
 $(document).ready( function () {
     $('table.table').DataTable({
-        order: [[1, 'desc']],
+        order: [[0, 'desc']],
     })
 
 } )
