@@ -79,7 +79,7 @@
               </div>
 
               <div class="col-md-4 text-center mb-5">
-                  <img src="assets/Think_Plus_Logo_PNG.png" style="overflow: hidden; height: 100px!important;" class="img-fluid" alt="">
+                  <img src="assets/Think_Plus_Logo_PNG.webp" style="overflow: hidden; height: 100px!important;" class="img-fluid" alt="">
                   <!-- <h5 class="mt-5">CONNECT WITH US</h5> -->
                   <div class="d-block pt-4">
                       <a href="https://www.linkedin.com/company/81343328"  target="_blank" class="m-2 text-reset"><i class="fs-2 bi bi-linkedin"></i></a>
@@ -114,6 +114,10 @@
           </div>
       </div>
     </section>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="custom.css">
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
     <script src="bootstrap/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>

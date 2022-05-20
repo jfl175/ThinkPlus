@@ -11,9 +11,8 @@
   <title>
       <?php echo $title; ?>
    </title>
-  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="custom.css">
+
+   <link rel="shortcut icon" href="favicon.png" />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-229307368-1"></script>
@@ -33,7 +32,7 @@
     <nav class="navbar sticky-top bg-white navbar-expand-sm navbar-light shadow-sm">
         <div class="container-lg">
             <a class="navbar-brand" href="index.php#header">
-                <img src="assets/Think_Plus_Logo_PNG.png" alt="thinkplus logo" width="90" class="img-fluid">
+                <img src="assets/Think_Plus_Logo_PNG.webp" alt="thinkplus logo" width="90" class="img-fluid">
                 <!-- <span class="fw-bold text-secondary">Think Plus Education</span> -->
               </a>
 
