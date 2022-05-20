@@ -24,7 +24,7 @@ $(document).ready(function(){
             if(data["code"] = 200){
                 $('#mentorModalContent').empty();
                 $('#mentorModalFooter').remove();
-                $('#mentorModalContent').html('<p class="lead"> Your request for FREE Mentoring Session with our expert has successfully been registered. Your reference number for this request is <span class="fw-bolder" >' + data["ref"] + '. </span>  Our experts will contact you within 24 working hours. </p><div class="text-end" id="mentorModalFooter"><button type="button" id="mentorClose" class="btn btn-success px-5" data-bs-dismiss="modal">Close</button></div>');
+                $('#mentorModalContent').html('<p class="lead px-3"> Your request for FREE Mentoring Session with our expert has successfully been registered. Your reference number for this request is <span class="fw-bolder" >' + data["ref"] + '. </span>  Our experts will contact you within 24 working hours. </p><div class="text-end" id="mentorModalFooter"><button type="button" id="mentorClose" class="btn btn-success px-5" data-bs-dismiss="modal">Close</button></div>');
 
                 // $("#mentorClose").on("click", function(){
                 //     location.reload(true);
@@ -58,7 +58,7 @@ $(document).ready(function(){
             if(data["code"] = 200){
                 $('#testModalContent').empty();
                 $('#testModalFooter').remove();
-                $('#testModalContent').html('<p class="lead"> Our experts will contact you and share the link for your FREE Assessment test. Your reference number is <span class="fw-bolder" >' + data["ref"] + '. </span>  Our experts will contact you within 24 working hours. </p><div class="text-end" id="testModalFooter"><button type="button" id="testClose" class="btn btn-success px-5" data-bs-dismiss="modal">Close</button></div>');
+                $('#testModalContent').html('<p class="lead px-3"> Our experts will contact you and share the link for your FREE Assessment test. Your reference number is <span class="fw-bolder" >' + data["ref"] + '. </span>  Our experts will contact you within 24 working hours. </p><div class="text-end" id="testModalFooter"><button type="button" id="testClose" class="btn btn-success px-5" data-bs-dismiss="modal">Close</button></div>');
             } else {
                 console.log('Something is wrong at assessment test form.');
             }
@@ -84,7 +84,7 @@ $(document).ready(function(){
             if(data["code"] = 200){
                 $('#contactModalContent').empty();
                 $('#contactModalFooter').remove();
-                $('#contactModalContent').html('<p class="lead"> We have successfully recorded your query. Your reference number is <span class="fw-bolder" >' + data["ref"] + '. </span>  Our experts will contact you within 48 working hours. </p><div class="text-end" id="contactModalFooter"><button type="button" id="contactClose" class="btn btn-success px-5" data-bs-dismiss="modal">Close</button></div>');
+                $('#contactModalContent').html('<p class="lead px-3"> We have successfully recorded your query. Your reference number is <span class="fw-bolder" >' + data["ref"] + '. </span>  Our experts will contact you within 48 working hours. </p><div class="text-end" id="contactModalFooter"><button type="button" id="contactClose" class="btn btn-success px-5" data-bs-dismiss="modal">Close</button></div>');
             } else {
                 console.log('Something is wrong at contact form.');
             }
