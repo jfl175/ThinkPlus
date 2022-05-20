@@ -12,7 +12,12 @@
       <?php echo $title; ?>
    </title>
 
-   <link rel="shortcut icon" href="favicon.png" />
+    <link rel="shortcut icon" href="favicon.png" />
+    <!-- <link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"> -->
+    
+    <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" onload="this.onload=null;this.rel='stylesheet'" >
+    <link rel="preload" as="style" href="bootstrap/css/bootstrap.min.css" onload="this.onload=null;this.rel='stylesheet'" >
+    <link rel="preload" as="style" href="custom.css" onload="this.onload=null;this.rel='stylesheet'">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-229307368-1"></script>

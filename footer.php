@@ -115,10 +115,6 @@
       </div>
     </section>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-    <link rel="stylesheet" href="custom.css">
-
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
     <script src="bootstrap/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
     <script src="form.js" crossorigin="anonymous"></script>
