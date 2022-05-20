@@ -139,8 +139,8 @@
                                 <div class="mb-3">
                                     <select class="form-select" id="testExam" name="testExam" required aria-label="Select exam">
                                         <option selected>Select exam</option>
-                                        <option value="ipmat">IPMAT</option>
-                                        <option value="cat">CAT</option>
+                                        <option value="IPMAT">IPMAT</option>
+                                        <option value="CAT">CAT</option>
                                     </select>
                                 </div>
                         </div>

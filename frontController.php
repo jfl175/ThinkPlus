@@ -80,4 +80,41 @@
         }
     }
 
+    if(isset($_POST['form'])) {
+        if($_POST['form'] == 'test') {
+
+            $lastID = $conn->query("SELECT `id` FROM free_test ORDER BY id DESC LIMIT 1");
+
+            if ($lastID->num_rows > 0) {
+                while($row = $lastID->fetch_assoc()) {
+                  $newID = intval($row["id"])+1;
+                }
+            } else {
+                $newID = 1;
+            }
+
+            $ref = 'TST' . date('ym') . $newID;
+
+            $sql = "INSERT INTO free_test (`name`, `phone`, `email`, `exam`, `ref_no`, `type`)
+                    VALUES ('".test_input($_POST['fullname'])."',
+                    '".test_input($_POST['phone'])."', 
+                    '".test_input($_POST['email'])."', 
+                    '".test_input($_POST['exam'])."', 
+                    '$ref',
+                    '1')";
+                    
+
+            if ($conn->query($sql) === TRUE) {
+                $result['code'] = 200;
+                $result['ref'] = $ref;
+
+                echo json_encode($result);
+            } else {
+                echo "Error: " . $sql . "<br>" . $conn->error;
+            }
+            
+            $conn->close();
+        }
+    }
+
 ?>
