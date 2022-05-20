@@ -1,5 +1,6 @@
 <?php 
     require_once 'config.php';
+    header("Cache-Control: max-age=31536000");
 ?>
 
 <!DOCTYPE html>
