@@ -7,7 +7,6 @@
         user journey?
             nav > login functionality
             nav > register
-            intro > book session functionality
             intro > test form functionality
             courses > enroll now
             ask me anything
@@ -57,7 +56,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form action="" id="formBook" method="get">
+                        <form action="" id="formBook">
                             <div class="mb-3">
                                 <input type="text" class="form-control" id="registerName" name="registerIName" required placeholder="Student's name">
                             </div>
@@ -115,7 +114,7 @@
             </div>
             
 
-            <!-- test modal -->
+            <!-- free test modal -->
             <div class="modal fade" id="test" tabindex="-1" aria-labelledby="testLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -125,29 +124,30 @@
                     </div>
                     
                     <div class="modal-body">
-                        <p>Kindly provide your details</p>
-                        <form action="" id="formTest" method="get">
-                            <div class="mb-3">
-                                <input type="text" class="form-control" id="testName" name="testName" required placeholder="Name">
-                            </div>
-                            <div class="mb-3">
-                                <input type="tel" class="form-control" id="testMobile" name="testMobile" required placeholder="Phone number (10 digits)">
-                            </div>
-                            <div class="mb-3">
-                            <input type="email" class="form-control" id="testEmail" name="testEmail" required placeholder="Email address">
-                            </div>
-                            <div class="mb-3">
-                                <select class="form-select" id="testExam" name="testExam" required aria-label="Select exam">
-                                    <option selected>Select exam</option>
-                                    <option value="ipmat">IPMAT</option>
-                                    <option value="cat">CAT</option>
-                                </select>
-                            </div>
+                        <div id="testModalContent">
+                            <p>Kindly provide your details</p>
+                            <form action="" id="formTest">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" id="testName" name="testName" required placeholder="Name">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="tel" class="form-control" id="testMobile" name="testMobile" required placeholder="Phone number (10 digits)">
+                                </div>
+                                <div class="mb-3">
+                                <input type="email" class="form-control" id="testEmail" name="testEmail" required placeholder="Email address">
+                                </div>
+                                <div class="mb-3">
+                                    <select class="form-select" id="testExam" name="testExam" required aria-label="Select exam">
+                                        <option selected>Select exam</option>
+                                        <option value="ipmat">IPMAT</option>
+                                        <option value="cat">CAT</option>
+                                    </select>
+                                </div>
+                        </div>
                     </div>
-                    <div class="modal-footer">
-                        
+                    <div class="modal-footer" id="testModalFooter">
                             <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
-                            <button type="submit" id="testSubmit" class="btn btn-success">Start Test</button>
+                            <button type="submit" id="testSubmit" class="btn btn-success">Submit</button>
                         </form>
                         <!-- <button type="button" class="btn btn-success">Submit</button> -->
                     </div>

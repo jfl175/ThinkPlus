@@ -111,7 +111,7 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                  <form action="" id="formLogin" method="get">
+                  <form action="" id="formLogin">
                       <div class="mb-3">
                           <input type="text" class="form-control" id="loginID" name="loginID" required placeholder="Username">
                       </div>
@@ -144,21 +144,23 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                  <form action="" id="formContact" method="get">
-                      <div class="mb-3">
-                          <input type="text" class="form-control" id="contactName" name="contactName" required placeholder="Your Name">
-                      </div>
-                      <div class="mb-3">
-                          <input type="tel" class="form-control" id="contactMobile" name="contactMobile" required placeholder="Your Contact No.">
-                      </div>
-                      <div class="mb-3">
-                          <textarea type="textarea" class="form-control" id="contactQuery" name="contactQuery" required placeholder="Your Query"></textarea>
-                      </div>
+                    <div id="contactModalContent">
+                        <form action="" id="formContact">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="contactName" name="contactName" required placeholder="Your Name">
+                            </div>
+                            <div class="mb-3">
+                                <input type="tel" class="form-control" id="contactMobile" name="contactMobile" required placeholder="Your Contact No.">
+                            </div>
+                            <div class="mb-3">
+                                <textarea type="textarea" class="form-control" id="contactQuery" name="contactQuery" required placeholder="Your Query"></textarea>
+                            </div>
+                    </div>
               </div>
-              <div class="modal-footer">
+              <div class="modal-footer" id="contactModalFooter">
                       <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
                       <button type="submit" id="contactSubmit" class="btn btn-success">Send</button>
-                  </form>
+                    </form>
                   <!-- <button type="button" class="btn btn-success">Submit</button> -->
               </div>
           </div>

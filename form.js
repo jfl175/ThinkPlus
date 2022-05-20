@@ -39,20 +39,20 @@ $(document).ready(function(){
 
     // Test your ability form
     $('#formTest').submit(function(e){
-    e.preventDefault();
-    var fullname = $('#testName').val();
-    var phone = $('#testMobile').val();
-    var email = $('#testEmail').val();
-    var exam = $('#testExam').val();
-    var form = 'test';
-    
-    $.post('frontController.php', {
-        fullname: fullname, 
-        phone: phone, 
-        email: email, 
-        exam: exam,
-        form: form
-    }).done(function(data){
+        e.preventDefault();
+        var fullname = $('#testName').val();
+        var phone = $('#testMobile').val();
+        var email = $('#testEmail').val();
+        var exam = $('#testExam').val();
+        var form = 'test';
+        
+        $.post('frontController.php', {
+            fullname: fullname, 
+            phone: phone, 
+            email: email, 
+            exam: exam,
+            form: form
+        }).done(function(data){
             console.log('Assesment Test details saved');
             console.log(data);
         })
@@ -60,20 +60,27 @@ $(document).ready(function(){
 
     // Contact-us
     $('#formContact').submit(function(e){
-    e.preventDefault();
-    var fullname = $('#contactName').val();
-    var phone = $('#contactMobile').val();
-    var message = $('#contactQuery').val();
-    var form = 'contact';
+        e.preventDefault();
+        var fullname = $('#contactName').val();
+        var phone = $('#contactMobile').val();
+        var message = $('#contactQuery').val();
+        var form = 'contact';
 
-    $.post('frontController.php', {
-        fullname: fullname, 
-        phone: phone, 
-        message: message,
-        form: form
-    }).done(function(data){
-            console.log('Contact-us details saved');
-            console.log(data);
+        $.post('frontController.php', {
+            fullname: fullname, 
+            phone: phone, 
+            message: message,
+            form: form
+        }).done(function(data){
+            data = $.parseJSON(data);
+
+            if(data["code"] = 200){
+                $('#contactModalContent').empty();
+                $('#contactModalFooter').remove();
+                $('#contactModalContent').html('<p class="lead"> We have successfully recorded your query. Your reference number is <span class="fw-bolder" >' + data["ref"] + '. </span> <br> Our experts will contact you within 48 working hours. </p><div class="text-end" id="contactModalFooter"><button type="button" id="contactClose" class="btn btn-success px-5" data-bs-dismiss="modal">Close</button></div>');
+            } else {
+                console.log('Something is wrong at contact form.');
+            }
         })
     })
 })

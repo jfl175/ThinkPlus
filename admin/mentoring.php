@@ -5,6 +5,7 @@
 
 	include("header.php");
 
+	require_once 'backendController.php';
 ?>
 
 			<main class="content">
@@ -14,14 +15,15 @@
 
                     <div class="row">
                         <div class="card ">
-						    <div class="col-10 offset-1 ">
+						    <div class="col-12">
                                 
 								<div class="card-header">
 									<h5 class="card-title mb-0">Latest Requests</h5>
 								</div>
-								<table class="table table-hover my-0">
+								<table id="mentorRequestsTable" class="table table-hover my-0 text-center">
 									<thead>
 										<tr>
+											<th>Ref. No.</th>
 											<th>Name</th>
 											<th>Phone No.</th>
 											<th>Email</th>
@@ -29,14 +31,11 @@
 											<!-- <th>Actions</th> -->
 										</tr>
 									</thead>
+									
 									<tbody>
-										<tr>
-											<td> </td>
-											<td > </td>
-											<td > </td>
-											<td> </td>
-											<!-- <td >  </td> -->
-										</tr>
+									<?php
+										getMentorRequests();
+									?>
 									</tbody>
 								</table>
 
