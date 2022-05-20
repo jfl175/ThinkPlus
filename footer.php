@@ -115,9 +115,9 @@
       </div>
     </section>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
-    <script src="bootstrap/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-    <script src="form.js" crossorigin="anonymous"></script>
+    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous" ></script>
+    <script defer src="bootstrap/js/bootstrap.bundle.min.js" crossorigin="anonymous" ></script>
+    <script defer src="form.js" crossorigin="anonymous" ></script>
 
 </body>
 </html> 
