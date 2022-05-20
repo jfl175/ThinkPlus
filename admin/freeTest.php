@@ -1,7 +1,7 @@
 <?php
 	error_reporting(E_ALL & ~E_NOTICE);
 	
-	$title = "Admin | Mentoring Sessions";
+	$title = "Admin | Free Test Requests";
 
 	include("header.php");
 
@@ -11,7 +11,7 @@
 			<main class="content">
 				<div class="container-fluid p-0">
 
-					<h1 class="h3 mb-3">Manage <strong>Mentoring Requests</strong></h1>
+					<h1 class="h3 mb-3">Manage <strong>FREE Test Requests</strong></h1>
 
                     <div class="row">
                         <div class="card ">
@@ -20,21 +20,22 @@
 								<div class="card-header">
 									<h5 class="card-title">Latest Requests</h5>
 								</div>
-								<table id="mentorRequestsTable" class="table table-hover my-0 text-center">
-									<thead>
+								<table id="testRequestsTable" class="table table-hover my-0 text-center">
+                                    <thead>
 										<tr>
 											<th class="text-center">Ref. No.</th>
 											<th class="text-center">Name</th>
 											<th class="text-center">Phone No.</th>
 											<th class="text-center">Email</th>
-											<th class="text-center">Session Date</th>
+											<th class="text-center">Exam</th>
+											<!-- <th class="text-center">Status</th> -->
 											<!-- <th class="text-center">Actions</th> -->
 										</tr>
 									</thead>
 									
 									<tbody>
 									<?php
-										getMentorRequests();
+										getTestRequests();
 									?>
 									</tbody>
 								</table>

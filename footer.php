@@ -95,7 +95,7 @@
                   <h5>CONTACT US</h5>
                   <p>
                       <span class="d-block">founder@thinkpluseducation.com</span>
-                      <span class="d-block">+91-7396653357,+91-8125442244</span>
+                      <span class="d-block">+91-9581400055,+91-9581400088</span>
                   </p>
                   <div class="p-2"></div>
                   <!-- <h5>ADDRESS</h5>

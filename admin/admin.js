@@ -1,5 +1,6 @@
 $(document).ready( function () {
-    $('#mentorRequestsTable').DataTable(({
+    $('table.table').DataTable({
         order: [[1, 'desc']],
-    });
-} );
+    })
+
+} )
