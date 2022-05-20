@@ -53,7 +53,7 @@
                   </div>
 
                   <div class="d-flex justify-content-center pt-5">
-                      <a href="faqs.php" class="btn shadow-sm btn-outline-danger" >
+                      <a href="faqs" class="btn shadow-sm btn-outline-danger" >
                       SEE ALL QUESTIONS
                       </a>
                   </div>
@@ -73,9 +73,9 @@
                   <h5>QUICK LINKS</h5>
                   <a href="assets/IPMAT_Brochure.pdf" download class="text-muted text-decoration-none"><p class="lead">Download IPMAT Brochure <i class="bi bi-cloud-download"></i></p></a>
                   <a href="assets/CAT_Brochure.pdf" download class="text-muted text-decoration-none"><p class="lead">Download CAT Brochure <i class="bi bi-cloud-download"></i></p></a>
-                  <a href="ipmat.php" class="text-muted text-decoration-none"><p class="lead">IPMAT <?=date('Y')?> </p></a>
-                  <a href="cat.php" class="text-muted text-decoration-none"><p class="lead">CAT <?=date('Y')?></p></a>
-                  <a href="faqs.php" class="text-muted text-decoration-none"><p class="lead">FAQS</p></a>
+                  <a href="ipmat" class="text-muted text-decoration-none"><p class="lead">IPMAT <?=date('Y')?> </p></a>
+                  <a href="cat" class="text-muted text-decoration-none"><p class="lead">CAT <?=date('Y')?></p></a>
+                  <a href="faqs" class="text-muted text-decoration-none"><p class="lead">FAQS</p></a>
               </div>
 
               <div class="col-md-4 text-center mb-5">

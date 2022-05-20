@@ -40,7 +40,7 @@
     <!-- navigation header -->
     <nav class="navbar sticky-top bg-white navbar-expand-sm navbar-light shadow-sm">
         <div class="container-lg">
-            <a class="navbar-brand" href="index.php#header">
+            <a class="navbar-brand" href="../">
                 <img src="assets/Think_Plus_Logo_PNG.webp" alt="thinkplus logo" width="90" class="img-fluid">
                 <!-- <span class="fw-bold text-secondary">Think Plus Education</span> -->
               </a>
@@ -56,13 +56,13 @@
 
                 <ul class="navbar-nav">
                     <li class="mx-2 nav-item ">
-                        <a class="nav-link shadow-sm btn btn-light" aria-current="page" href="index.php#header">
+                        <a class="nav-link shadow-sm btn btn-light" aria-current="page" href="../">
                         Home
                         </a>
                     </li> 
                     
                     <li class="mx-2 nav-item ">
-                        <a class="nav-link shadow-sm btn btn-light" aria-current="page" href="roadmap.php">
+                        <a class="nav-link shadow-sm btn btn-light" aria-current="page" href="roadmap">
                         Roadmap
                         </a>
                     </li> 
@@ -71,12 +71,12 @@
                         Courses
                       </a>
                       <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="ipmat.php">IPMAT</a></li>
-                        <li><a class="dropdown-item" href="cat.php">CAT</a></li>
+                        <li><a class="dropdown-item" href="ipmat">IPMAT</a></li>
+                        <li><a class="dropdown-item" href="cat">CAT</a></li>
                       </ul>
                     </li>
                     <li class="mx-2 nav-item ">
-                        <a class="nav-link shadow-sm btn btn-light" aria-current="page" href="index.php#about-us">
+                        <a class="nav-link shadow-sm btn btn-light" aria-current="page" href="../#about-us">
                         About Us
                         </a>
                     </li>  

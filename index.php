@@ -245,8 +245,8 @@
                             <p class="card-text">
                                 VARC: 100+ Hours of Live Interactive Sessions | 90+ Mock Tests | 65+ in class tests | 50+ concept sheets
                           </p>
-                          <a href="ipmat.php" class="shadow-sm d-block btn btn-primary mb-3 disabled">Enroll Now</a>
-                          <a href="ipmat.php" class="shadow-sm d-block btn btn-outline-danger">Learn More</a>
+                          <a href="ipmat" class="shadow-sm d-block btn btn-primary mb-3 disabled">Enroll Now</a>
+                          <a href="ipmat" class="shadow-sm d-block btn btn-outline-danger">Learn More</a>
                         </div>
                       </div>
                 </div>
@@ -265,7 +265,7 @@
                                 VARC: 100+ Hours of Live Interactive Sessions | 250+ videos | 30+ Assignments
                           </p>
                           <a href="#" class="shadow-sm d-block btn btn-primary mb-3">Enroll Now</a>
-                          <a href="cat.php" class="shadow-sm d-block btn btn-outline-danger">Learn More</a> -->
+                          <a href="cat" class="shadow-sm d-block btn btn-outline-danger">Learn More</a> -->
                           
                           <div class="p-5"></div>
                           <h2 class="text-center">Coming Soon</h2>

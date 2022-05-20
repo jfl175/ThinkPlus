@@ -4,7 +4,7 @@
 
 	include("header.php");
 
-	header("Location: mentoring.php");
+	header("Location: mentoring");
 	die();
 
 ?>
