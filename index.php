@@ -380,17 +380,17 @@
                           </div>
                           <div style="height:360px;" class="carousel-item" data-bs-interval="2000">
                             <div class="d-flex justify-content-center">
-                            <img src="assets/about2.jpg" class="rounded d-block w-100" alt="session image 2">
+                            <img src="assets/about2.webp" class="rounded d-block w-100" alt="session image 2">
                         </div>
                           </div>
                           <div style="height:360px;" class="carousel-item">
                             <div class="d-flex justify-content-center">
-                            <img src="assets/about3.jpg" class="rounded d-block w-100" alt="session image 3">
+                            <img src="assets/about3.webp" class="rounded d-block w-100" alt="session image 3">
                         </div>
                           </div>
                           <div style="height:360px;" class="carousel-item">
                             <div class="d-flex justify-content-center">
-                            <img src="assets/about4.jpg" class="rounded d-block w-100" alt="session image 4">
+                            <img src="assets/about4.webp" class="rounded d-block w-100" alt="session image 4">
                         </div>
                           </div>
                         </div>
@@ -453,7 +453,7 @@
                 </div>
                 <div class="col-md-2">
                     <div class="card text-dark bg-white" >
-                        <img src="assets/ram.png" class="card-img-top shadow p-2 bg-success custom-thumbnail-2" alt="ipmat course">
+                        <img src="assets/ram.webp" class="card-img-top shadow p-2 bg-success custom-thumbnail-2" alt="ipmat course">
                         <div class="card-body">
                             <h5 class="card-title text-center">Ram Pavan</h5>
                             <p class="card-text text-center">IIM Udaipur</p>
