@@ -53,7 +53,7 @@
                   </div>
 
                   <div class="d-flex justify-content-center pt-5">
-                      <a href="faqs.php" class="btn shadow-sm btn-outline-danger" >
+                      <a href="faqs" class="btn shadow-sm btn-outline-danger" >
                       SEE ALL QUESTIONS
                       </a>
                   </div>
@@ -73,13 +73,13 @@
                   <h5>QUICK LINKS</h5>
                   <a href="assets/IPMAT_Brochure.pdf" download class="text-muted text-decoration-none"><p class="lead">Download IPMAT Brochure <i class="bi bi-cloud-download"></i></p></a>
                   <a href="assets/CAT_Brochure.pdf" download class="text-muted text-decoration-none"><p class="lead">Download CAT Brochure <i class="bi bi-cloud-download"></i></p></a>
-                  <a href="ipmat.php" class="text-muted text-decoration-none"><p class="lead">IPMAT <?=date('Y')?> </p></a>
-                  <a href="cat.php" class="text-muted text-decoration-none"><p class="lead">CAT <?=date('Y')?></p></a>
-                  <a href="faqs.php" class="text-muted text-decoration-none"><p class="lead">FAQS</p></a>
+                  <a href="ipmat" class="text-muted text-decoration-none"><p class="lead">IPMAT <?=date('Y')?> </p></a>
+                  <a href="cat" class="text-muted text-decoration-none"><p class="lead">CAT <?=date('Y')?></p></a>
+                  <a href="faqs" class="text-muted text-decoration-none"><p class="lead">FAQS</p></a>
               </div>
 
               <div class="col-md-4 text-center mb-5">
-                  <img src="assets/Think_Plus_Logo_PNG.png" style="overflow: hidden; height: 100px!important;" class="img-fluid" alt="">
+                  <img src="assets/Think_Plus_Logo_PNG.webp" style="overflow: hidden; height: 100px!important;" class="img-fluid" alt="">
                   <!-- <h5 class="mt-5">CONNECT WITH US</h5> -->
                   <div class="d-block pt-4">
                       <a href="https://www.linkedin.com/company/81343328"  target="_blank" class="m-2 text-reset"><i class="fs-2 bi bi-linkedin"></i></a>
@@ -95,7 +95,7 @@
                   <h5>CONTACT US</h5>
                   <p>
                       <span class="d-block">founder@thinkpluseducation.com</span>
-                      <span class="d-block">+91-7396653357,+91-8125442244</span>
+                      <span class="d-block">+91-9581400055,+91-9581400088</span>
                   </p>
                   <div class="p-2"></div>
                   <!-- <h5>ADDRESS</h5>
@@ -115,9 +115,9 @@
       </div>
     </section>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
-    <script src="bootstrap/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-    <script src="form.js" crossorigin="anonymous"></script>
+    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous" ></script>
+    <script defer src="bootstrap/js/bootstrap.bundle.min.js" crossorigin="anonymous" ></script>
+    <script defer src="form.js" crossorigin="anonymous" ></script>
 
 </body>
 </html> 

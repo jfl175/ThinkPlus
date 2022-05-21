@@ -7,7 +7,6 @@
         user journey?
             nav > login functionality
             nav > register
-            intro > book session functionality
             intro > test form functionality
             courses > enroll now
             ask me anything
@@ -25,7 +24,7 @@
           <div class="container py-5">
               <div class="row">
                   <div class="col-md-6 offset-md-1">
-                      <img src="assets/intro.png" class="img-fluid" alt="intro image">
+                      <img src="assets/intro.webp" class="img-fluid" alt="intro image">
                   </div>
                   <div class="col-md-3 offset-md-1">
 
@@ -57,7 +56,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form action="" id="formBook" method="get">
+                        <form action="" id="formBook">
                             <div class="mb-3">
                                 <input type="text" class="form-control" id="registerName" name="registerIName" required placeholder="Student's name">
                             </div>
@@ -81,31 +80,32 @@
           <!-- book session modal -->
             <div class="modal fade" id="bookSession" tabindex="-1" aria-labelledby="bookSessionLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content ">
+                <div class="modal-content">
                     <div class="modal-header">
                     <h5 class="container modal-title text-center h5" id="bookSessionLabel">Your FREE Mentoring Session</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <p>Kindly provide your details</p>
-                        <form action="" id="formMentor" method="get">
-                            <div class="mb-3">
-                                <input type="text" class="form-control" id="bookName" name="bookName" required placeholder="Name">
-                            </div>
-                            <div class="mb-3">
-                                <input type="tel" class="form-control" id="bookMobile" name="bookMobile" required placeholder="Phone number (10 digits)">
-                            </div>
-                            <div class="mb-3">
-                                <input type="email" class="form-control" id="bookEmail" name="bookEmail" required placeholder="Email address">
-                            </div>
-                            <div class="mb-3">
-                                <input type="date" class="form-control" id="bookDate" name="bookDate" min="<?php echo date('Y-m-j',strtotime("+1 days"));?>" value="<?php echo date('Y-m-j',strtotime("+1 days"));?>" required placeholder="Prefferred date">
-                            </div>
+                        <div id="mentorModalContent">
+                            <p>Kindly provide your details</p>
+                            <form action="" id="formMentor" method="get">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" id="bookName" name="bookName" required placeholder="Name">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="tel" class="form-control" id="bookMobile" name="bookMobile" required placeholder="Phone number (10 digits)">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" id="bookEmail" name="bookEmail" required placeholder="Email address">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="date" class="form-control" id="bookDate" name="bookDate" min="<?php echo date('Y-m-j',strtotime("+2 days"));?>" value="<?php echo date('Y-m-j',strtotime("+2 days"));?>" required placeholder="Prefferred date">
+                                </div>
+                        </div>
                     </div>
-                    <div class="modal-footer">
-                        
+                    <div class="modal-footer" id="mentorModalFooter">
                             <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
-                            <button type="submit" class="btn btn-success">Submit</button>
+                            <button type="submit" id="mentorSubmit" class="btn btn-success">Submit</button>
                         </form>
                         <!-- <button type="button" class="btn btn-success">Submit</button> -->
                     </div>
@@ -114,7 +114,7 @@
             </div>
             
 
-            <!-- test modal -->
+            <!-- free test modal -->
             <div class="modal fade" id="test" tabindex="-1" aria-labelledby="testLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -124,29 +124,30 @@
                     </div>
                     
                     <div class="modal-body">
-                        <p>Kindly provide your details</p>
-                        <form action="" id="formTest" method="get">
-                            <div class="mb-3">
-                                <input type="text" class="form-control" id="testName" name="testName" required placeholder="Name">
-                            </div>
-                            <div class="mb-3">
-                                <input type="tel" class="form-control" id="testMobile" name="testMobile" required placeholder="Phone number (10 digits)">
-                            </div>
-                            <div class="mb-3">
-                            <input type="email" class="form-control" id="testEmail" name="testEmail" required placeholder="Email address">
-                            </div>
-                            <div class="mb-3">
-                                <select class="form-select" id="testExam" name="testExam" required aria-label="Select exam">
-                                    <option selected>Select exam</option>
-                                    <option value="ipmat">IPMAT</option>
-                                    <option value="cat">CAT</option>
-                                </select>
-                            </div>
+                        <div id="testModalContent">
+                            <p>Kindly provide your details</p>
+                            <form action="" id="formTest">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" id="testName" name="testName" required placeholder="Name">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="tel" class="form-control" id="testMobile" name="testMobile" required placeholder="Phone number (10 digits)">
+                                </div>
+                                <div class="mb-3">
+                                <input type="email" class="form-control" id="testEmail" name="testEmail" required placeholder="Email address">
+                                </div>
+                                <div class="mb-3">
+                                    <select class="form-select" id="testExam" name="testExam" required aria-label="Select exam">
+                                        <option selected>Select exam</option>
+                                        <option value="IPMAT">IPMAT</option>
+                                        <option value="CAT">CAT</option>
+                                    </select>
+                                </div>
+                        </div>
                     </div>
-                    <div class="modal-footer">
-                        
+                    <div class="modal-footer" id="testModalFooter">
                             <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
-                            <button type="submit" class="btn btn-success">Start Test</button>
+                            <button type="submit" id="testSubmit" class="btn btn-success">Submit</button>
                         </form>
                         <!-- <button type="button" class="btn btn-success">Submit</button> -->
                     </div>
@@ -161,26 +162,26 @@
         <section id="choose-us">
             <div class="container py-5">
                 <div class="row">
-                    <h1 class="text-center">WHY CHOOSE <img src="assets/Think_Plus_Logo_PNG.png" class="img-fluid" style="height: 60px!important;margin-top:-20px;" alt=""></h1>
+                    <h1 class="text-center">WHY CHOOSE <img src="assets/Think_Plus_Logo_PNG.webp" class="img-fluid" style="height: 60px!important;margin-top:-20px;" alt=""></h1>
                     <h3 class="text-center">Advantage of both offline & online classes</h2>
                     <div class="col-md-10 offset-md-1 row d-flex align-self-center bg-red-gradient">
                         <div class="p-3 col-sm-6 col-md-3 text-center">
-                            <img src="assets/choose1.png" class="img-fluid d-blcok" style="height: 80px!important;" alt="why coose us image 1">
+                            <img src="assets/choose1.webp" class="img-fluid d-blcok" style="height: 80px!important;" alt="why coose us image 1">
                             <h5 class="d-block text-white">One on One Mentor</h5>
                             <p class="text-light">Each student have a personal mentor for individual attention and guidance.</p>
                         </div>
                         <div class="p-3 col-sm-6 col-md-3 text-center">
-                            <img src="assets/choose2.png" class="img-fluid d-blcok" style="height: 80px!important;" alt="why coose us image 1">
+                            <img src="assets/choose2.webp" class="img-fluid d-blcok" style="height: 80px!important;" alt="why coose us image 1">
                             <h5 class="d-block text-white">Concept Videos</h5>
                             <p  class="text-light">All sessions' lectures have been recorded and are available to our students at any time.</p>
                         </div>
                         <div class="p-3 col-sm-6 col-md-3 text-center">
-                            <img src="assets/choose3.png" class="img-fluid d-blcok" style="height: 80px!important;" alt="why coose us image 1">
+                            <img src="assets/choose3.webp" class="img-fluid d-blcok" style="height: 80px!important;" alt="why coose us image 1">
                             <h5 class="d-block text-white">Self Paced</h5>
                             <p  class="text-light">Listen to lectures and recorded concept videos at your own pace to ensure that you grasp everything. Accessible at any time.</p>
                         </div>
                         <div class="p-3 col-sm-6 col-md-3 text-center">
-                            <img src="assets/choose4.png" class="img-fluid d-blcok" style="height: 80px!important;" alt="why coose us image 1">
+                            <img src="assets/choose4.webp" class="img-fluid d-blcok" style="height: 80px!important;" alt="why coose us image 1">
                             <h5 class="d-block text-white">Comprehensive Super 30</h5>
                             <p  class="text-light">Physical sessions with access to recordings of the sessions, as well as live sessions with the faculty.</p>
                         </div>
@@ -219,7 +220,7 @@
                       <!-- </div> -->
                 </div>
                 <div class="col-md-5">
-                    <img src="assets/oneonone2.png" class="img-fluid" alt="personal mentoring sessions">
+                    <img src="assets/oneonone2.webp" class="img-fluid" alt="personal mentoring sessions">
                 </div>
             </div>
         </div>
@@ -232,7 +233,7 @@
                 <h2 class="text-center">OUR COURSES</h2>
                 <div class="col-md-4 offset-md-2 pt-5">
                     <div class="card border border-danger shadow text-dark bg-light" >
-                        <img src="assets/ipmat.png" class="card-img-top p-2 bg-white" alt="ipmat course">
+                        <img src="assets/ipmat.webp" class="card-img-top p-2 bg-white" alt="ipmat course">
                         <div class="card-body">
                           <h4 class="card-title text-center">IPMAT 2022</h4>
                           <p class="card-text">
@@ -244,14 +245,14 @@
                             <p class="card-text">
                                 VARC: 100+ Hours of Live Interactive Sessions | 90+ Mock Tests | 65+ in class tests | 50+ concept sheets
                           </p>
-                          <a href="ipmat.php" class="shadow-sm d-block btn btn-primary mb-3 disabled">Enroll Now</a>
-                          <a href="ipmat.php" class="shadow-sm d-block btn btn-outline-danger">Learn More</a>
+                          <a href="ipmat" class="shadow-sm d-block btn btn-primary mb-3 disabled">Enroll Now</a>
+                          <a href="ipmat" class="shadow-sm d-block btn btn-outline-danger">Learn More</a>
                         </div>
                       </div>
                 </div>
                 <div class="col-md-4 mx-4 mb-5 pt-5">
                     <div class="card border border-danger shadow text-dark bg-light" style="height: 575px!important;" >
-                        <img src="assets/cat.png" class="card-img-top p-2 bg-white" alt="ipmat course">
+                        <img src="assets/cat.webp" class="card-img-top p-2 bg-white" alt="ipmat course">
                         <div class="card-body">
                           <h4 class="card-title text-center">CAT 2022</h4>
                           <!-- <p class="card-text">
@@ -264,7 +265,7 @@
                                 VARC: 100+ Hours of Live Interactive Sessions | 250+ videos | 30+ Assignments
                           </p>
                           <a href="#" class="shadow-sm d-block btn btn-primary mb-3">Enroll Now</a>
-                          <a href="cat.php" class="shadow-sm d-block btn btn-outline-danger">Learn More</a> -->
+                          <a href="cat" class="shadow-sm d-block btn btn-outline-danger">Learn More</a> -->
                           
                           <div class="p-5"></div>
                           <h2 class="text-center">Coming Soon</h2>
@@ -283,7 +284,7 @@
             <div class="row">
                 <h2 class="text-center mb-5">WHAT OUR ASPIRANTS SAY</h2>
                 <div class="col-md-3">
-                    <img src="assets/aspirant1.png" class="img-fluid shadow-sm border d-block custom-thumbnail" alt="aspirant photo 1">
+                    <img src="assets/aspirant1.webp" class="img-fluid shadow-sm border d-block custom-thumbnail" alt="aspirant photo 1">
                     <div class="container p-3 pt-5 testimonial-bg">
                         <p class="text-warning text-center">
                             <i class="bi bi-star-fill"></i>
@@ -299,7 +300,7 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <img src="assets/aspirant2.png" class="img-fluid shadow-sm border d-block custom-thumbnail" alt="aspirant photo 1">
+                    <img src="assets/aspirant2.webp" class="img-fluid shadow-sm border d-block custom-thumbnail" alt="aspirant photo 1">
                     <div class="container p-3 pt-5 testimonial-bg">
                         <p class="text-warning text-center">
                             <i class="bi bi-star-fill"></i>
@@ -315,7 +316,7 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <img src="assets/aspirant5.png" class="img-fluid shadow-sm border d-block custom-thumbnail" alt="aspirant photo 1">
+                    <img src="assets/aspirant5.webp" class="img-fluid shadow-sm border d-block custom-thumbnail" alt="aspirant photo 1">
                     <div class="container p-3 pt-5 testimonial-bg">
                         <p class="text-warning text-center">
                             <i class="bi bi-star-fill"></i>
@@ -331,7 +332,7 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <img src="assets/aspirant4.png" class="img-fluid shadow-sm border d-block custom-thumbnail" alt="aspirant photo 1">
+                    <img src="assets/aspirant4.webp" class="img-fluid shadow-sm border d-block custom-thumbnail" alt="aspirant photo 1">
                     <div class="container p-3 pt-5 testimonial-bg">
                         <p class="text-warning text-center">
                             <i class="bi bi-star-fill"></i>
@@ -370,7 +371,7 @@
                         <div class="carousel-inner ">
                           <div style="height:360px;" class="carousel-item  active" data-bs-interval="10000">
                               <div class="d-flex justify-content-center">
-                                <img src="assets/about1.png" class="rounded d-block w-100" alt="session image 1">
+                                <img src="assets/about1.webp" class="rounded d-block w-100" alt="session image 1">
                               </div>
                             <!-- <div class="carousel-caption d-none d-md-block">
                               <h5>First slide label</h5>
@@ -379,17 +380,17 @@
                           </div>
                           <div style="height:360px;" class="carousel-item" data-bs-interval="2000">
                             <div class="d-flex justify-content-center">
-                            <img src="assets/about2.jpg" class="rounded d-block w-100" alt="session image 2">
+                            <img src="assets/about2.webp" class="rounded d-block w-100" alt="session image 2">
                         </div>
                           </div>
                           <div style="height:360px;" class="carousel-item">
                             <div class="d-flex justify-content-center">
-                            <img src="assets/about3.jpg" class="rounded d-block w-100" alt="session image 3">
+                            <img src="assets/about3.webp" class="rounded d-block w-100" alt="session image 3">
                         </div>
                           </div>
                           <div style="height:360px;" class="carousel-item">
                             <div class="d-flex justify-content-center">
-                            <img src="assets/about4.jpg" class="rounded d-block w-100" alt="session image 4">
+                            <img src="assets/about4.webp" class="rounded d-block w-100" alt="session image 4">
                         </div>
                           </div>
                         </div>
@@ -417,7 +418,7 @@
                 <div class="d-flex justify-content-center">
                 <!-- <div class="col-sm-2 offset-sm-4"> -->
                     <div class="card text-dark bg-white mx-3" >
-                        <img src="assets/rama.png" class="card-img-top shadow p-2 bg-primary custom-thumbnail-2" alt="ipmat course">
+                        <img src="assets/rama.webp" class="card-img-top shadow p-2 bg-primary custom-thumbnail-2" alt="ipmat course">
                         <div class="card-body">
                             <h5 class="card-title text-center">Rama Krishna P</h5>
                             <p class="card-text text-center">IIM Udaipur</p>
@@ -426,7 +427,7 @@
                 <!-- </div>  -->
                     <!-- <div class="col-sm-2">
                     <div class="card text-dark bg-white mx-3" >
-                        <img src="assets/rama.png" class="card-img-top shadow p-2 bg-primary custom-thumbnail-2" alt="ipmat course">
+                        <img src="assets/rama.webp" class="card-img-top shadow p-2 bg-primary custom-thumbnail-2" alt="ipmat course">
                         <div class="card-body">
                             <h5 class="card-title text-center">Rama Krishna P</h5>
                             <p class="card-text text-center">IIM Udaipur</p>
@@ -443,7 +444,7 @@
                 <div class="mt-5"></div>
                 <div class="col-md-2 offset-md-2">
                     <div class="card text-dark bg-white" >
-                        <img src="assets/siti.png" class="card-img-top shadow p-2 bg-danger custom-thumbnail-2" alt="ipmat course">
+                        <img src="assets/siti.webp" class="card-img-top shadow p-2 bg-danger custom-thumbnail-2" alt="ipmat course">
                         <div class="card-body">
                             <h5 class="card-title text-center">Sitikantha</h5>
                             <p class="card-text text-center">IIM Udaipur</p>
@@ -452,7 +453,7 @@
                 </div>
                 <div class="col-md-2">
                     <div class="card text-dark bg-white" >
-                        <img src="assets/ram.png" class="card-img-top shadow p-2 bg-success custom-thumbnail-2" alt="ipmat course">
+                        <img src="assets/ram.webp" class="card-img-top shadow p-2 bg-success custom-thumbnail-2" alt="ipmat course">
                         <div class="card-body">
                             <h5 class="card-title text-center">Ram Pavan</h5>
                             <p class="card-text text-center">IIM Udaipur</p>
@@ -461,7 +462,7 @@
                 </div>
                 <div class="col-md-2">
                     <div class="card text-dark bg-white" >
-                        <img src="assets/sriram.png" class="card-img-top shadow p-2 bg-warning custom-thumbnail-2" alt="ipmat course">
+                        <img src="assets/sriram.webp" class="card-img-top shadow p-2 bg-warning custom-thumbnail-2" alt="ipmat course">
                         <div class="card-body">
                             <h5 class="card-title text-center">Sriram</h5>
                             <p class="card-text text-center">IIM Udaipur</p>
@@ -470,7 +471,7 @@
                 </div>
                 <div class="col-md-2">
                     <div class="card text-dark bg-white" >
-                        <img src="assets/sarat.png" class="card-img-top shadow p-2 bg-primary custom-thumbnail-2" alt="ipmat course">
+                        <img src="assets/sarat.webp" class="card-img-top shadow p-2 bg-primary custom-thumbnail-2" alt="ipmat course">
                         <div class="card-body">
                             <h5 class="card-title text-center">Sarat</h5>
                             <p class="card-text text-center">IIM Udaipur</p>

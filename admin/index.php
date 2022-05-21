@@ -1,9 +1,11 @@
 <?php
-	error_reporting(E_ALL & ~E_NOTICE);
 	
 	$title = "Admin Dashboard";
 
 	include("header.php");
+
+	header("Location: mentoring");
+	die();
 
 ?>
 
