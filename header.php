@@ -16,7 +16,7 @@
    </title>
 
 
-    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="shortcut icon" href="favicon.jpg" />
     <!-- <link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"> -->
     
     <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" onload="this.onload=null;this.rel='stylesheet'" >
