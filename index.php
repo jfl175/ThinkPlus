@@ -489,7 +489,7 @@
                         </a>
                       </span>
                       <span class="mx-3 fw-normal">
-                        <i class="bi bi-telephone-fill"></i> +91-7396653357, +91-8125442244
+                        <i class="bi bi-telephone-fill"></i> +91-9581400055, +91-9581400088
                       </span>
                     </p> 
               </div>
