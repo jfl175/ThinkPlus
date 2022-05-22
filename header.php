@@ -164,7 +164,7 @@
                             <!-- Validate mobile number -->
                             <script>
                                         function validate(){
-                                            var num = document.getElementById("bookMobile").value;
+                                            var num = document.getElementById("contactMobile").value;
                                             var regx = /^[6-9]\d{9}$/;
                                             if(regx.test(num)){
                                                 return true;
