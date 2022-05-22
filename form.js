@@ -71,12 +71,14 @@ $(document).ready(function(){
         var fullname = $('#contactName').val();
         var phone = $('#contactMobile').val();
         var message = $('#contactQuery').val();
+        var email = $('#contactEmail').val();
         var form = 'contact';
 
         $.post('frontController.php', {
             fullname: fullname, 
             phone: phone, 
             message: message,
+            email: email,
             form: form
         }).done(function(data){
             data = $.parseJSON(data);

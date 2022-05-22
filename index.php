@@ -94,6 +94,21 @@
                                 </div>
                                 <div class="mb-3">
                                     <input type="tel" class="form-control" id="bookMobile" name="bookMobile" required placeholder="Phone number (10 digits)">
+                                    <!-- Validate mobile number -->
+                                    <script>
+                                        function validate(){
+                                            var num = document.getElementById("bookMobile").value;
+                                            var regx = /^[6-9]\d{9}$/;
+                                            if(regx.test(num)){
+                                                return true;
+                                            }
+                                            else{
+                                                alert("Invalid Contact Number")
+                                            }
+                                        }
+                                    </script>
+
+
                                 </div>
                                 <div class="mb-3">
                                     <input type="email" class="form-control" id="bookEmail" name="bookEmail" required placeholder="Email address">
@@ -105,7 +120,7 @@
                     </div>
                     <div class="modal-footer" id="mentorModalFooter">
                             <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
-                            <button type="submit" id="mentorSubmit" class="btn btn-success">Submit</button>
+                            <button onclick="validate()" type="submit" id="mentorSubmit" class="btn btn-success">Submit</button>
                         </form>
                         <!-- <button type="button" class="btn btn-success">Submit</button> -->
                     </div>
@@ -133,6 +148,20 @@
                                 <div class="mb-3">
                                     <input type="tel" class="form-control" id="testMobile" name="testMobile" required placeholder="Phone number (10 digits)">
                                 </div>
+                                <!-- Validate mobile number -->
+                                <script>
+                                        function validate(){
+                                            var num = document.getElementById("bookMobile").value;
+                                            var regx = /^[6-9]\d{9}$/;
+                                            if(regx.test(num)){
+                                                return true;
+                                            }
+                                            else{
+                                                alert("Invalid Contact Number")
+                                            }
+                                        }
+                                </script>
+                                
                                 <div class="mb-3">
                                 <input type="email" class="form-control" id="testEmail" name="testEmail" required placeholder="Email address">
                                 </div>
@@ -147,7 +176,7 @@
                     </div>
                     <div class="modal-footer" id="testModalFooter">
                             <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
-                            <button type="submit" id="testSubmit" class="btn btn-success">Submit</button>
+                            <button onclick="validate()" type="submit" id="testSubmit" class="btn btn-success">Submit</button>
                         </form>
                         <!-- <button type="button" class="btn btn-success">Submit</button> -->
                     </div>

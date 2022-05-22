@@ -160,6 +160,24 @@
                             <div class="mb-3">
                                 <input type="tel" class="form-control" id="contactMobile" name="contactMobile" required placeholder="Your Contact No.">
                             </div>
+
+                            <!-- Validate mobile number -->
+                            <script>
+                                        function validate(){
+                                            var num = document.getElementById("bookMobile").value;
+                                            var regx = /^[6-9]\d{9}$/;
+                                            if(regx.test(num)){
+                                                return true;
+                                            }
+                                            else{
+                                                alert("Invalid Contact Number")
+                                            }
+                                        }
+                            </script>
+
+                            <div class="mb-3">
+                                <input type="mail" class="form-control" id="contactEmail" name="contactEmail" required placeholder="Your Email (abc@gmail.com)">
+                            </div>
                             <div class="mb-3">
                                 <textarea type="textarea" class="form-control" id="contactQuery" name="contactQuery" required placeholder="Your Query"></textarea>
                             </div>
@@ -167,7 +185,7 @@
               </div>
               <div class="modal-footer" id="contactModalFooter">
                       <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
-                      <button type="submit" id="contactSubmit" class="btn btn-success">Send</button>
+                      <button onclick="validate()" type="submit" id="contactSubmit" class="btn btn-success">Send</button>
                     </form>
                   <!-- <button type="button" class="btn btn-success">Submit</button> -->
               </div>

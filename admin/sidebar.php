@@ -24,6 +24,12 @@
             </a>
 					</li>
 
+					<li class="sidebar-item <?php echo (end(explode('/',$_SERVER['PHP_SELF'])) == 'questionBank.php'? "active" : ""); ?>">
+						<a class="sidebar-link" href="questionBank">
+              <i class="align-middle" data-feather="user"></i> <span class="align-middle">Question Bank</span>
+            </a>
+					</li>
+					
 					<li class="sidebar-item <?php echo (end(explode('/',$_SERVER['PHP_SELF'])) == 'queries.php'? "active" : ""); ?>">
 						<a class="sidebar-link" href="queries">
               <i class="align-middle" data-feather="log-in"></i> <span class="align-middle">Queries</span>
